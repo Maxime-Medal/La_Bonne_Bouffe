@@ -1,0 +1,39 @@
+/*  Article Page  */
+.img-restau{
+    width: 100%;;
+}
+
+.img-dish{
+    width: 60%;
+}
+
+p{
+    text-align: justify;
+    margin: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 480px) {
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .img-restau{
+        width: 40%;
+        display: flex;
+    }
+
+    .dishes{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
