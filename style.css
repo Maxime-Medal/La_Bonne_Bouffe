@@ -9,7 +9,8 @@ a:link {
 
 body {
     font-family: 'Montserrat';
-   
+    margin: 0;
+
 }
 /*code css header*/
 
@@ -17,20 +18,24 @@ body {
     background-color: #CF2B4E;
     width: 100%;
     display: flex;
-    align-items: center;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+}
 
 .logo {
     width: 40%;
     padding-left: 15px;
+    justify-content: flex-start;
 }
 
-nav {
-    width: 85%; 
+.nav {
     display: flex;
     justify-content: flex-end;
-} 
+    width: 100%;
+}
 
 ul {
     list-style: none;
@@ -38,6 +43,8 @@ ul {
     justify-content: flex-end;
     padding-right: 15px;
     color: white;
+
+    
      
 }
 
@@ -45,6 +52,12 @@ li {
     padding-left: 30px; 
 }
  
+a:link, a:visited {
+    color: white !important;
+    text-decoration: none;
+}
+
+
 .big-logo {
     width: 100%;
     margin: 0;
