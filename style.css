@@ -1,0 +1,19 @@
+.coup-de-coeur {
+    display: block;
+
+
+}
+
+.card-name {
+    
+}
+
+.cards-discover {
+    visibility: hidden;
+}
+
+@media screen and (min-widht: 600px) {
+    .cards-discover {
+        visibility: visible;
+    }
+}
