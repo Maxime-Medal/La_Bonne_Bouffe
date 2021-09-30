@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel=“preconnect” href=“https://fonts.googleapis.com”>
     <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
-    <link
-        href=“https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap”
-        rel=“stylesheet”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Ton restau</title>
 </head>
 <header>
@@ -19,37 +19,34 @@
 
 <body>
     <section class="main-page">
-        <h1>Nom du restau</h1>
-        <img class="img-restau" src="ressources/photo food/resto/patrick-tomasso-GXXYkSwndP4-unsplash.jpg"
-            alt="photo d'un restaurant" />
-
+        <div id="title">
+            <h1>Nom du restau</h1>
+        </div>
         <div class="dishes">
-            <img class="img-dish" src="ressources/photo food/frat/caroline-attwood-bpPTlXWTOvg-unsplash.jpg"
-                alt="dish picture">
-            <img class="img-dish" src="ressources/photo food/frat/caroline-attwood-bpPTlXWTOvg-unsplash.jpg"
-                alt="dish picture">
+            <img class="img-restau" target="_blank" src="ressources/photo food/resto/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="photo d'un restaurant" />
+
+
+            <div class="dish">
+                <img class="img-dish" src="ressources/photo food/frat/caroline-attwood-bpPTlXWTOvg-unsplash.jpg" alt="dish picture">
+                <img class="img-dish" src="ressources/photo food/frat/caroline-attwood-bpPTlXWTOvg-unsplash.jpg" alt="dish picture">
+            </div>
         </div>
 
-        <p>nec piget dicere avide magis hanc insulam populum romanum invasisse quam iuste. ptolomaeo enim rege foederato
-            nobis et socio ob aerarii nostri angustias
-            iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et
-            velut hostiles eius exuviae classi inpositae
-            in urbem advectae sunt per catonem, nunc repetetur ordo gestorum. <br>
-            nam quibusdam, quos audio sapientes habitos in graecia, placuisse opinor mirabilia quaedam (sed nihil est
-            quod illi non persequantur argutiis): partim
-            fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi
-            suarum cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas habenas
-            habere amicitiae, quas vel adducas, cum velis, vel remittas; caput enim esse ad beate vivendum securitatem,
-            qua frui non possit animus, si tamquam parturiat unus pro pluribus.
+        <p>nec piget dicere avide magis hanc insulam populum romanum invasisse quam iuste. ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria
+            facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per catonem, nunc repetetur ordo gestorum. <br> nam quibusdam, quos audio sapientes habitos in graecia, placuisse opinor mirabilia quaedam (sed nihil est quod
+            illi non persequantur argutiis): partim fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi suarum cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas
+            habenas habere amicitiae, quas vel adducas, cum velis, vel remittas; caput enim esse ad beate vivendum securitatem, qua frui non possit animus, si tamquam parturiat unus pro pluribus.
         </p>
     </section>
-    <section id="contact-button">
-        <button id="restau-number">
-            Passe ta commande ici!
-        </button>
-    </section>
-    <section id="avis">
-    </section>
+    <!-- V Bouton et avis V -->
+    <div id="button">
+        <a href="tel: 06-08-08-08-08" id="contact"><strong>Ça te fais baver? <br> 
+            ! CLICK ICI !</strong></a>
+
+    </div>
+    <div id="avis">
+        <p>faire les avis</p>
+    </div>
     <footer>
         <!--
         ICI le FOOTER
