@@ -1,3 +1,12 @@
+/* Je supprime définitivement le style bleu dégueulasse des balises a */
+
+a:link {
+    text-decoration: none;
+}
+
+/* C'est cadeau, c'est pour moi ! */
+
+
 body {
     font-family: 'Montserrat';
 }
@@ -136,6 +145,164 @@ button a:hover {
     transition: .3s ease-in-out;
 
 }
+
+
+/* _______FOOTER (mobile first)_______ */
+
+footer {
+    font-size: .8rem;
+    background-color: #CF2B4E;
+    padding: 1rem;
+}
+
+/* ___Menu___ */
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.menu-footer .tous {
+    width: 100%;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.menu-footer a {
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.menu-footer h1 {
+    display: none
+}
+
+/* ___Contact___ */
+
+.contact {
+    display: block;
+    margin-top: 1.1rem;
+}
+
+.contact h1 {
+    display: none
+}
+
+.catg {
+    font-weight: bold;
+}
+
+.contact p {
+    width: 100%;
+    text-align: center;
+    margin: 5px
+}
+
+/* ___Réseaux___ */
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.reseaux-logo {
+    margin: .25rem
+}
+
+.reseaux h1 {
+    display: none
+}
+
+
+/* _____MEDIA QUERY FOOTER mobile > desktop_____ */
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        align-items: center;
+        color: white;
+    }
+
+    footer section {
+        width: 30%;
+        margin: 0px;
+    }
+
+    footer h1 {
+        margin: 0px;
+        padding: 1rem
+    }
+
+    /* ___Menu___ */
+
+    .menu-footer h1 {
+        display: inline
+    }
+
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-footer a {
+        width: 100%;
+        padding: 2px;
+        color:white;
+        font-style: normal;
+    }
+
+    a:hover {
+        color: #FFDA2A
+    }
+
+    .menu-footer .tous {
+        margin-bottom: 0px;
+    }
+    
+
+    /* ___Contact___ */
+
+    .contact h1 {
+        display: inline
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+
+    /* ___Réseaux___ */
+
+    .reseaux h1 {
+        display: inline;
+        width: 100%;
+    }
+
+    .reseaux {
+        text-align: center;
+        display: block;
+    }
+
+    .img-footer {
+        margin: 1rem
+    }
+
+    .reseaux-logo {
+        padding: .5rem
+    }
+}
+
 
 /* Section coup-de-coeur */
 
