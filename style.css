@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat';
+   
 }
 /*code css header*/
 
@@ -39,7 +40,13 @@ li {
     width: 100%;
     margin: 0;
     background-color: #CF2B4E;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#card-categories > h2 {
+    text-align: center;
+
 }
 
 .big-logo img {
@@ -50,6 +57,10 @@ li {
 }
 
 /* fin code css header*/
+
+
+/* Début categorie restaurant */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -89,13 +100,14 @@ li {
 .opacity-color .card-img  {
     background: #CF2B4E;
     border-radius: 30px;
-    height: 245px;
+    
     }
 
     .opacity-color .card-img img {
         opacity: 1;
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
+        
     }
     .opacity-color .card-img:hover img {
         opacity: .5;
@@ -137,6 +149,8 @@ button a:hover {
 
 }
 
+/* Fin categorie restaurant */
+
 /* Section coup-de-coeur */
 
 .coup-de-coeur {
@@ -153,3 +167,66 @@ button a:hover {
     }
 }
 
+
+
+/* Fin coup-de-coeur */
+
+
+   /* Page tous les restaurants */
+
+
+.categorie-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.categorie {
+    text-align: center;
+    background-color:#CF2B4E;
+    color: #ffffff;
+    text-align: left !important;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.restaurant-card {
+    width: 30% !important;
+    
+}
+
+  /* responsive page tous les restaurants */
+
+  @media only screen and (max-width: 1025px) {
+
+    .categorie {
+        font-size: 1em;
+        text-align: center !important;
+    }
+    .restaurant-card  {
+        width: 46% !important;
+    }
+
+    .card {
+        width: 46% !important;
+    }
+
+  @media only screen and (max-width: 768px) {
+
+    .categorie {
+        font-size: 1em;
+        text-align: center !important;
+    }
+    .restaurant-card {
+        width: 100% !important;
+        padding: 0px;
+    }
+
+    .card {
+        width: 100% !important;
+        padding: 0px;
+    }
+
+    .card-description {
+        text-align: justify;
+    }
+}
