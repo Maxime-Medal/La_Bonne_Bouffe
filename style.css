@@ -1,6 +1,55 @@
 body {
     font-family: 'Montserrat';
 }
+/*code css header*/
+
+.header {
+    background-color: #CF2B4E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 40%;
+    padding-left: 15px;
+}
+
+nav {
+    width: 85%; 
+    display: flex;
+    justify-content: flex-end;
+} 
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: white;
+     
+}
+
+li {
+    padding-left: 30px; 
+}
+ 
+.big-logo {
+    width: 100%;
+    margin: 0;
+    background-color: #CF2B4E;
+    
+}
+
+.big-logo img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* fin code css header*/
 
 .card-container {
     display: flex;
