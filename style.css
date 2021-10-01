@@ -1,17 +1,8 @@
-/* Je supprime définitivement le style bleu dégueulasse des balises a */
-
-a:link {
-    text-decoration: none;
-}
-
-/* C'est cadeau, c'est pour moi ! */
-
-
 body {
     font-family: 'Montserrat';
     margin: 0;
-
 }
+
 /*code css header*/
 
 .header {
@@ -42,17 +33,14 @@ ul {
     display: flex;
     justify-content: flex-end;
     padding-right: 15px;
-    color: white;
-
-    
-     
+    color: white;    
 }
 
 li {
     padding-left: 30px; 
 }
  
-a:link, a:visited {
+.nav a:link, a:visited {
     color: white !important;
     text-decoration: none;
 }
@@ -66,11 +54,6 @@ a:link, a:visited {
     justify-content: space-between;
 }
 
-#card-categories > h2 {
-    text-align: center;
-
-}
-
 .big-logo img {
     width: 20%;
     display: block;
@@ -82,8 +65,104 @@ a:link, a:visited {
 
 /* fin code css header*/
 
+  /* Section coup-de-coeur */
+  .coup-de-coeur {
+    display: flex;
+    justify-content: space-around;
+    height: 35em; 
+}
+.card-coup-de-coeur {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1em; 
+}
+.card-coup-de-coeur img {
+    height: 20em;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.cards-discover {
+    display: none;
+    width: 47%;
+    flex-direction: column;
+    padding: 1em;
+}
+.cards-discover h2 {
+    margin-bottom: 1em;
+}
+.card-discover1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.card-discover2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.cards-discover img {
+    height: 10em;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.cards-discover .resume-discover {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.resume-discover h2 {
+    text-align: center;
+}
 
-/* Début categorie restaurant */
+/* effet de survol sur image*/
+
+.opacity-color img  {
+    background: #cf2b4e;
+    border-radius: 30px;
+}
+
+.opacity-color img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+}
+.opacity-color img:hover {
+        opacity: .5;
+}
+
+/*fin de l'effet */
+
+@media screen and (min-width: 600px) {
+      .cards-discover {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        padding: 1em; 
+        flex-wrap: nowrap;
+    }
+    .card-coup-de-coeur {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        padding: 1em; 
+    }
+}
+/* Fin coup-de-coeur */
+
+/* Début section FAT FRAT FRAIS*/
+#card-categories > h2 {
+    text-align: center;
+
+}
 
 .card-container {
     display: flex;
@@ -119,33 +198,12 @@ a:link, a:visited {
     border-radius: 30px;
 }
 
-/*effet de survol sur image*/
-
-.opacity-color .card-img  {
-    background: #CF2B4E;
-    border-radius: 30px;
-    
-    }
-
-    .opacity-color .card-img img {
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        
-    }
-    .opacity-color .card-img:hover img {
-        opacity: .5;
-    }
-
-    /*fin de l'effet*/
-
-
 .card-button {
     text-align: center;
     margin: 2em;
 }
 
-button {
+.card-button button {
     background: none;
 	color: inherit;
 	border: none;
@@ -155,17 +213,16 @@ button {
 	outline: inherit;
 }
 
-button a {
+.card-button button a {
     border:1px solid #CF2B4E;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 1rem;
     color: #CF2B4E ;
     font-family: 'Montserrat';
-
 }
 
-button a:hover {
+.card-button button a:hover {
     background-color: #CF2B4E;
     color: #ffffff;
     -webkit-transition: .3s ease-in-out;
@@ -173,9 +230,15 @@ button a:hover {
 
 }
 
+/* Fin categorie restaurant FAT FRAT FRAIS */
 
-/* Fin categorie restaurant */
+/* Je supprime définitivement le style bleu dégueulasse des balises a */
 
+a:link {
+    text-decoration: none;
+}
+
+/* C'est cadeau, c'est pour moi ! */
 
 /* _______FOOTER (mobile first)_______ */
 
@@ -229,6 +292,7 @@ footer {
     width: 100%;
     text-align: center;
     margin: 5px
+
 }
 
 /* ___Réseaux___ */
@@ -289,7 +353,7 @@ footer {
         font-style: normal;
     }
 
-    a:hover {
+    .menu-footer a:hover {
         color: #FFDA2A
     }
 
@@ -334,28 +398,6 @@ footer {
 }
 
 
-
-/* Section coup-de-coeur */
-
-.coup-de-coeur {
-    display: block;
-}
-.card-name {    
-}
-.cards-discover {
-    visibility: hidden;
-}
-@media screen and (min-widht: 600px) {
-    .cards-discover {
-        visibility: visible;
-    }
-}
-
-
-
-/* Fin coup-de-coeur */
-
-
    /* Page tous les restaurants */
 
 
@@ -393,6 +435,7 @@ footer {
     .card {
         width: 46% !important;
     }
+}
 
   @media only screen and (max-width: 768px) {
 
@@ -414,3 +457,115 @@ footer {
         text-align: justify;
     }
 }
+
+/* start Article Page  */
+                
+                
+#main-page {
+    display: flex;
+    flex-direction: column;
+}
+                
+#title-art {
+    background-color: #CF2B4E;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+                
+#title-art h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px #67C2CB;
+    font-weight: bolder;
+}
+                
+.img-restau-art {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0 0 0);
+}
+
+.dishes {
+    display: flex;
+       flex-direction: column;
+}
+
+.img-dish {
+    justify-content: center;
+    width: 70%;
+    margin-top: 1em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0 0 0);
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-page p {
+     text-align: justify;
+     margin: 10px;
+     font-family: 'Montserrat', sans-serif;
+     background-color: rgba(103, 194, 203, 0.2);
+ }
+ 
+#button-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#button-art a {
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text: black;
+    background-color: #CF2B4E;
+}
+
+@media screen and (min-width: 480px) {
+    #main-page {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .img-restau-art {
+        width: 60%;
+    }
+    .dishes {
+        flex-direction: row;
+        margin-left: 1.5em;
+    }
+    .img-dish {
+        margin: 0;
+        flex-direction: column;
+    }
+    .dish {
+        justify-content: space-between;
+    }
+    #button-art {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-page p {
+        margin-top: 20px;
+    }
+    #button-art a {
+        width: 30%;
+        height: 2.5em;
+    }
+}
+/* END Article Page  */
