@@ -1,580 +1,599 @@
-        body {
-            font-family: 'Montserrat';
-            margin: 0;
-        }
-        /*code css header*/
-        
-        .header {
-            background-color: #CF2B4E;
-            width: 100%;
-            display: flex;
-        }
-        
-        .container {
-            display: flex;
-            width: 100%;
-        }
-        
-        .logo {
-            width: 40%;
-            padding-left: 15px;
-            justify-content: flex-start;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-        }
-        
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 15px;
-            color: white;
-        }
-        
-        li {
-            padding-left: 30px;
-        }
-        
-        .nav a:link,
-        a:visited {
-            color: white !important;
-            text-decoration: none;
-        }
-        
-        .big-logo {
-            width: 100%;
-            margin: 0;
-            background-color: #CF2B4E;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .big-logo img {
-            width: 20%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* fin code css header*/
-        /* Section coup-de-coeur */
-        
-        .coup-de-coeur {
-            display: flex;
-            justify-content: space-around;
-            height: 35em;
-        }
-        
-        .card-coup-de-coeur {
-            display: flex;
-            flex-direction: column;
-            width: 95%;
-            padding: 1em;
-        }
-        
-        .card-coup-de-coeur img {
-            height: 20em;
-            border-radius: 30px;
-            max-width: 100%;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-        
-        .cards-discover {
-            display: none;
-            width: 47%;
-            flex-direction: column;
-            padding: 1em;
-        }
-        
-        .cards-discover h2 {
-            margin-bottom: 1em;
-        }
-        
-        .card-discover1 {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-        
-        .card-discover2 {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row-reverse;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-        
-        .cards-discover img {
-            height: 10em;
-            border-radius: 30px;
-            max-width: 100%;
-            margin-bottom: 1em;
-            margin-top: 1em;
-        }
-        
-        .cards-discover .resume-discover {
-            display: flex;
-            width: 50%;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        
-        .resume-discover h2 {
-            text-align: center;
-        }
-        /* effet de survol sur image*/
-        
-        .opacity-color img {
-            background: #cf2b4e;
-            border-radius: 30px;
-        }
-        
-        .opacity-color img {
-            opacity: 1;
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-        }
-        
-        .opacity-color img:hover {
-            opacity: .5;
-        }
-        /*fin de l'effet */
-        
-        @media screen and (min-width: 600px) {
-            .cards-discover {
-                display: flex;
-                width: 47%;
-                flex-direction: column;
-                padding: 1em;
-                flex-wrap: nowrap;
-            }
-            .card-coup-de-coeur {
-                display: flex;
-                flex-direction: column;
-                width: 47%;
-                padding: 1em;
-            }
-        }
-        /* Fin coup-de-coeur */
-        /* Début section FAT FRAT FRAIS*/
-        
-        #card-categories>h2 {
-            text-align: center;
-        }
-        
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        #card-categories>h2 {
-            text-align: center;
-        }
-        
-        .card {
-            width: 31%;
-            justify-content: space-around;
-            padding: 15px;
-        }
-        
-        .card-title {
-            text-align: center;
-            background-color: #CF2B4E;
-            color: #ffffff;
-        }
-        
-        .card-title h2 {
-            font-size: 1.2em;
-            font-weight: 400;
-            padding: 7px;
-        }
-        
-        .card-description h3 {
-            text-align: center;
-        }
-        
-        .card-description {
-            padding: 10px;
-        }
-        
-        .card-img img {
-            max-width: 100%;
-            border-radius: 30px;
-        }
-        
-        .card-button {
-            text-align: center;
-            margin: 2em;
-        }
-        
-        .card-button button {
-            background: none;
-            color: inherit;
-            border: none;
-            padding: 0;
-            font: inherit;
-            cursor: pointer;
-            outline: inherit;
-        }
-        
-        .card-button button a {
-            border: 1px solid #CF2B4E;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 1rem;
-            color: #CF2B4E;
-            font-family: 'Montserrat';
-        }
-        
-        .card-button button a:hover {
-            background-color: #CF2B4E;
-            color: #ffffff;
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-        }
-        /* Fin categorie restaurant FAT FRAT FRAIS */
-        /* Je supprime définitivement le style bleu dégueulasse des balises a */
-        
-        a:link {
-            text-decoration: none;
-        }
-        /* C'est cadeau, c'est pour moi ! */
-        /* _______FOOTER (mobile first)_______ */
-        
-        footer {
-            font-size: .8rem;
-            background-color: #CF2B4E;
-            padding: 1rem;
-        }
-        /* ___Menu___ */
-        
-        .menu-footer {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            color: white;
-        }
-        
-        .menu-footer .tous {
-            width: 100%;
-            display: block;
-            margin-bottom: .4rem;
-        }
-        
-        .menu-footer a {
-            width: 30%;
-            text-align: center;
-            color: white;
-        }
-        
-        .menu-footer h1 {
-            display: none
-        }
-        /* ___Contact___ */
-        
-        .contact {
-            display: block;
-            margin-top: 1.1rem;
-        }
-        
-        .contact h1 {
-            display: none
-        }
-        
-        .catg {
-            font-weight: bold;
-        }
-        
-        .contact p {
-            width: 100%;
-            text-align: center;
-            margin: 5px
-        }
-        /* ___Réseaux___ */
-        
-        .reseaux {
-            display: flex;
-            justify-content: center;
-            margin-top: 1.2rem;
-        }
-        
-        .reseaux-logo {
-            margin: .25rem
-        }
-        
-        .reseaux h1 {
-            display: none
-        }
-        /* _____MEDIA QUERY FOOTER mobile > desktop_____ */
-        
-        @media screen and (min-width: 1200px) {
-            footer {
-                display: flex;
-                justify-content: space-around;
-                font-size: 1rem;
-                align-items: center;
-                color: white;
-            }
-            button {
-                background: none;
-                color: inherit;
-                border: none;
-                padding: 0;
-                font: inherit;
-                cursor: pointer;
-                outline: inherit;
-            }
-            button a {
-                border: 1px solid #CF2B4E;
-                padding: 20px;
-                background-color: #ffffff;
-                border-radius: 1rem;
-                color: #CF2B4E;
-                font-family: 'Montserrat';
-            }
-            button a:hover {
-                background-color: #CF2B4E;
-                color: #ffffff;
-                -webkit-transition: .3s ease-in-out;
-                transition: .3s ease-in-out;
-            }
-            /* Fin categorie restaurant */
-            /* _______FOOTER (mobile first)_______ */
-            footer {
-                font-size: .8rem;
-                background-color: #CF2B4E;
-                padding: 1rem;
-            }
-            /* ___Menu___ */
-            .menu-footer {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                color: white;
-            }
-            .menu-footer .tous {
-                width: 100%;
-                display: block;
-                margin-bottom: .4rem;
-            }
-            .menu-footer a:hover {
-                color: #FFDA2A
-            }
-            .menu-footer h1 {
-                display: none
-            }
-            /* ___Contact___ */
-            .contact {
-                display: block;
-                margin-top: 1.1rem;
-            }
-            .contact h1 {
-                display: none
-            }
-            .catg {
-                font-weight: bold;
-            }
-            .contact p {
-                width: 100%;
-                text-align: center;
-                margin: 5px
-            }
-            /* ___Réseaux___ */
-            .reseaux {
-                display: flex;
-                justify-content: center;
-                margin-top: 1.2rem;
-            }
-            .reseaux-logo {
-                margin: .25rem
-            }
-        }
-        /* Page tous les restaurants */
-        
-        .categorie-container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        .categorie {
-            text-align: center;
-            background-color: #CF2B4E;
-            color: #ffffff;
-            text-align: left !important;
-            padding: 10px;
-            font-weight: 400;
-        }
-        
-        .restaurant-card {
-            width: 30% !important;
-        }
-        /* responsive page tous les restaurants */
-        
-        @media only screen and (max-width: 1025px) {
-            .categorie {
-                font-size: 1em;
-                text-align: center !important;
-            }
-            /* effet de survol sur image*/
-            .opacity-color img {
-                background: #cf2b4e;
-                border-radius: 30px;
-            }
-            .opacity-color img {
-                opacity: 1;
-                -webkit-transition: .3s ease-in-out;
-                transition: .3s ease-in-out;
-            }
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .categorie {
-                font-size: 1em;
-                text-align: center !important;
-            }
-            /*fin de l'effet */
-            @media screen and (min-width: 600px) {
-                .cards-discover {
-                    display: flex;
-                    width: 47%;
-                    flex-direction: column;
-                    padding: 1em;
-                    flex-wrap: nowrap;
-                }
-                .card-coup-de-coeur {
-                    display: flex;
-                    flex-direction: column;
-                    width: 47%;
-                    padding: 1em;
-                }
-            }
-            /* Fin coup-de-coeur */
-            /* Page tous les restaurants */
-            .categorie-container {
-                width: 80%;
-                margin: 0 auto;
-            }
-            .categorie {
-                text-align: center;
-                background-color: #CF2B4E;
-                color: #ffffff;
-                text-align: left !important;
-                padding: 10px;
-                font-weight: 400;
-            }
-        }
-        /* start Article Page  */
-        
-        #main-page {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #title-art {
-            background-color: #CF2B4E;
-            margin: 20px;
-            border-radius: 3px;
-            box-shadow: 0px 0px 5px rgb(0, 0, 0);
-        }
-        
-        #title-art h1 {
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            padding: 25px;
-            margin: 20px;
-            border-radius: 25px;
-            text-shadow: 1px 1px 3px #67C2CB;
-            font-weight: bolder;
-        }
-        
-        .img-restau-art {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 2px 2px 5px rgb(0 0 0);
-        }
-        
-        .dishes {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .img-dish {
-            justify-content: center;
-            width: 70%;
-            margin-top: 1em;
-            border-radius: 20px;
-            box-shadow: 2px 2px 5px rgb(0 0 0);
-        }
-        
-        .dish {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .main-page p {
-            text-align: justify;
-            margin: 10px;
-            font-family: 'Montserrat', sans-serif;
-            background-color: rgba(103, 194, 203, 0.2);
-        }
-        
-        #button-art {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        
-        #button-art a {
-            padding: 20px;
-            width: 60%;
-            box-shadow: 0px 0px 5px black;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            text-align: center;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            text: black;
-            background-color: #CF2B4E;
-        }
-        
-        @media screen and (min-width: 480px) {
-            #main-page {
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            .img-restau-art {
-                width: 60%;
-            }
-            .dishes {
-                flex-direction: row;
-                margin-left: 1.5em;
-            }
-            .img-dish {
-                margin: 0;
-                flex-direction: column;
-            }
-            .dish {
-                justify-content: space-between;
-            }
-            #button-art {
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            .main-page p {
-                margin-top: 20px;
-            }
-            #button-art a {
-                width: 30%;
-                height: 2.5em;
-            }
-        }
-        /* END Article Page  */
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+
+/*code css header*/
+
+.header {
+    background-color: #CF2B4E;
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    width: 40%;
+    padding-left: 15px;
+    justify-content: flex-start;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: white;
+}
+
+li {
+    padding-left: 30px;
+}
+
+.nav a:link,
+a:visited {
+    color: white !important;
+    text-decoration: none;
+}
+
+.big-logo {
+    width: 100%;
+    margin: 0;
+    background-color: #CF2B4E;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.big-logo img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* fin code css header*/
+
+#page-web {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8em;
+    margin-top: 8em;
+}
+
+
+/* Section coup-de-coeur */
+
+.coup-de-coeur {
+    display: flex;
+    justify-content: space-around;
+    height: 35em;
+}
+
+.card-coup-de-coeur {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1em;
+}
+
+.card-coup-de-coeur img {
+    height: 20em;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.cards-discover {
+    display: none;
+    width: 47%;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.cards-discover h2 {
+    margin-bottom: 1em;
+}
+
+.card-discover1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.card-discover2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.cards-discover img {
+    height: 10em;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.cards-discover .resume-discover {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.resume-discover h2 {
+    text-align: center;
+}
+
+.card-body {
+    font-size: 0.8em;
+}
+
+
+/* effet de survol sur image*/
+
+.opacity-color img {
+    background: #cf2b4e;
+    border-radius: 30px;
+}
+
+.opacity-color img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.opacity-color img:hover {
+    opacity: .5;
+}
+
+
+/*fin de l'effet */
+
+@media screen and (min-width: 600px) {
+    .cards-discover {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        padding: 1em;
+        flex-wrap: nowrap;
+    }
+    .card-coup-de-coeur {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        padding: 1em;
+    }
+}
+
+
+/* Fin coup-de-coeur */
+
+
+/* Début section FAT FRAT FRAIS*/
+
+#card-categories {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#card-categories>h2 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#card-categories>h2 {
+    text-align: center;
+}
+
+.card {
+    width: 30%;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.card-title {
+    text-align: center;
+    background-color: #CF2B4E;
+    color: #ffffff;
+}
+
+.card-title h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 7px;
+}
+
+.card-description h3 {
+    text-align: center;
+}
+
+.card-description {
+    padding: 10px;
+}
+
+.card-img img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.card-button {
+    text-align: center;
+    margin: 2em;
+}
+
+.card-button button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.card-button button a {
+    border: 1px solid #CF2B4E;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: #CF2B4E !important;
+    font-family: 'Montserrat';
+}
+
+.card-button button a:hover {
+    background-color: #CF2B4E;
+    color: #ffffff;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+/* Fin categorie restaurant FAT FRAT FRAIS */
+
+
+/* Je supprime définitivement le style bleu dégueulasse des balises a */
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* C'est cadeau, c'est pour moi ! */
+
+
+/* _______FOOTER (mobile first)_______ */
+
+footer {
+    font-size: .8rem;
+    background-color: #CF2B4E;
+    padding: 1rem;
+}
+
+
+/* ___Menu___ */
+
+.menu-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.menu-footer .tous {
+    width: 100%;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.menu-footer a {
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.menu-footer h1 {
+    display: none
+}
+
+
+/* ___Contact___ */
+
+.contact {
+    display: block;
+    margin-top: 1.1rem;
+}
+
+.contact h1 {
+    display: none
+}
+
+.catg {
+    font-weight: bold;
+}
+
+.contact p {
+    width: 100%;
+    text-align: center;
+    margin: 5px
+}
+
+
+/* ___Réseaux___ */
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.reseaux-logo {
+    margin: .25rem
+}
+
+.reseaux h1 {
+    display: none
+}
+
+
+/* _____MEDIA QUERY FOOTER mobile > desktop_____ */
+
+@media screen and (min-width: 1200px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        align-items: center;
+        color: white;
+    }
+    footer section {
+        width: 30%;
+        margin: 0px;
+    }
+    footer h1 {
+        margin: 0px;
+        padding: 1rem
+    }
+    /* ___Menu___ */
+    .menu-footer h1 {
+        display: inline
+    }
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-footer a {
+        width: 100%;
+        padding: 2px;
+        color: white;
+        font-style: normal;
+    }
+    .menu-footer a:hover {
+        color: #FFDA2A
+    }
+    .menu-footer .tous {
+        margin-bottom: 0px;
+    }
+    /* ___Contact___ */
+    .contact h1 {
+        display: inline
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    /* ___Réseaux___ */
+    .reseaux h1 {
+        display: inline;
+        width: 100%;
+    }
+    .reseaux {
+        text-align: center;
+        display: block;
+    }
+    .img-footer {
+        margin: 1rem
+    }
+    .reseaux-logo {
+        padding: .5rem
+    }
+}
+
+
+/* Page tous les restaurants */
+
+.categorie-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.categorie {
+    text-align: center;
+    background-color: #CF2B4E;
+    color: #ffffff;
+    text-align: left !important;
+    padding: 10px;
+    font-weight: 400;
+    margin-top: 3em;
+}
+
+.restaurant-card {
+    width: 30% !important;
+}
+
+
+/* responsive page tous les restaurants */
+
+@media only screen and (max-width: 1025px) {
+    .categorie {
+        font-size: 1em;
+        text-align: center !important;
+    }
+    .restaurant-card {
+        width: 46% !important;
+    }
+    .card {
+        width: 46% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .categorie {
+        font-size: 1em;
+        text-align: center !important;
+    }
+    .restaurant-card {
+        width: 100% !important;
+        padding: 0px;
+    }
+    .card {
+        width: 100% !important;
+        padding: 0px;
+    }
+    .card-description {
+        text-align: justify;
+    }
+}
+
+
+/* start Article Page  */
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#title-art {
+    background-color: #CF2B4E;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+#title-art h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px #67C2CB;
+    font-weight: bolder;
+}
+
+.img-restau-art {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0 0 0);
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-dish {
+    justify-content: center;
+    width: 70%;
+    margin-top: 1em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0 0 0);
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-page p {
+    text-align: justify;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(103, 194, 203, 0.2);
+}
+
+#button-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#button-art a {
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text: black;
+    background-color: #CF2B4E;
+}
+
+@media screen and (min-width: 480px) {
+    #main-page {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .img-restau-art {
+        width: 60%;
+    }
+    .dishes {
+        flex-direction: row;
+        margin-left: 1.5em;
+    }
+    .img-dish {
+        margin: 0;
+        flex-direction: column;
+    }
+    .dish {
+        justify-content: space-between;
+    }
+    #button-art {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-page p {
+        margin-top: 20px;
+    }
+    #button-art a {
+        width: 30%;
+        height: 2.5em;
+    }
+}
+
+
+/* END Article Page  */
