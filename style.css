@@ -51,7 +51,7 @@ li {
     padding-left: 30px; 
 }
  
-a:link, a:visited {
+.nav ul li a:link, a:visited {
     color: white !important;
     text-decoration: none;
 }
@@ -179,7 +179,9 @@ button a:hover {
 footer {
     font-size: .8rem;
     background-color: #CF2B4E;
+    color: white;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 /* ___Menu___ */
@@ -244,6 +246,13 @@ footer {
     display: none
 }
 
+/* ___Copyrights___ */
+
+.copyrights p {
+    width: 100%;
+    font-size: .6rem;
+    text-align: center;
+}
 
 /* _____MEDIA QUERY FOOTER mobile > desktop_____ */
 
@@ -286,7 +295,7 @@ footer {
         font-style: normal;
     }
 
-    a:hover {
+    .menu-footer a:hover {
         color: #FFDA2A
     }
 
@@ -328,6 +337,12 @@ footer {
     .reseaux-logo {
         padding: .5rem
     }
+
+    /* ___Copyrights___ */
+
+    .copyrights p {
+        font-size: .8rem;
+    }
 }
 
 
@@ -337,8 +352,7 @@ footer {
 .coup-de-coeur {
     display: block;
 }
-.card-name {    
-}
+
 .cards-discover {
     visibility: hidden;
 }
@@ -389,7 +403,7 @@ footer {
 
     .card {
         width: 46% !important;
-    }
+    }}
 
   @media only screen and (max-width: 768px) {
 
