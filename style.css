@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat';
     margin: 0;
 }
+
+
+/* Categorie selection des restaurants accueil*/
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,13 +40,7 @@ body {
     border-radius: 30px;
 }
 
-/* Je supprime définitivement le style bleu dégueulasse des balises a */
-
-a:link {
-    text-decoration: none;
-}
-
-/* C'est cadeau, c'est pour moi ! */
+/* Fin categorie selection des restaurants accueil*/
 
 
 
@@ -77,8 +75,6 @@ ul {
     justify-content: flex-end;
     padding-right: 15px;
     color: white;
-
-    
      
 }
 
@@ -88,6 +84,10 @@ li {
  
 a:link, a:visited {
     color: white !important;
+    text-decoration: none;
+}
+
+a:link {
     text-decoration: none;
 }
 
@@ -176,9 +176,6 @@ button a {
     border-radius: 30px;
 }
 
-/*effet de survol sur image*/
-
-
  /*effet de survol sur image*/
 .opacity-color .card-img  {
     background: #CF2B4E;
@@ -231,7 +228,6 @@ button a:hover {
     transition: .3s ease-in-out;
 
 }
-
 
 
 /* Fin categorie restaurant */
