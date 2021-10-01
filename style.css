@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 0.8em;
+}
+
 /*code css header*/
 
 .header {
@@ -52,16 +56,24 @@ li {
     background-color: #CF2B4E;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .big-logo img {
-    width: 20%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* fin code css header*/
+
+#page-web {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8em;
+    margin-top: 8em;
+}
 
   /* Section coup-de-coeur */
   .coup-de-coeur {
@@ -116,10 +128,16 @@ li {
     width: 50%;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10px;
 }
 .resume-discover h2 {
     text-align: center;
 }
+
+.card-body {
+    font-size: 0.8em;
+}
+
 
 /* effet de survol sur image*/
 
@@ -157,6 +175,12 @@ li {
 /* Fin coup-de-coeur */
 
 /* Début section FAT FRAT FRAIS*/
+
+#card-categories {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
 #card-categories > h2 {
     text-align: center;
 
@@ -170,7 +194,7 @@ li {
     text-align: center;  
 }
 .card {
-    width: 31%;
+    width: 30%;
     justify-content: space-around;
     padding: 15px;   
 }
@@ -216,7 +240,7 @@ li {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 1rem;
-    color: #CF2B4E ;
+    color: #CF2B4E !important ;
     font-family: 'Montserrat';
 }
 
@@ -411,6 +435,7 @@ footer {
     text-align: left !important;
     padding: 10px;
     font-weight: 400;
+    margin-top: 3em;
 }
 
 .restaurant-card {
