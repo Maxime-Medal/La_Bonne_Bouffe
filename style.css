@@ -254,6 +254,22 @@ li {
 
 /* Fin categorie restaurant FAT FRAT FRAIS */
 
+/* Début de ST CYPRIEN */
+.st-cyp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-st-cyp, .txt-st-cyp {
+  width: 46%;
+  justify-content: space-around;
+  padding: 15px;   
+}
+
+
+
+/* Fin de ST CYPRIEN */
+
 /* Je supprime définitivement le style bleu dégueulasse des balises a */
 
 a:link {
