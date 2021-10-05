@@ -1,6 +1,6 @@
 body {
-    font-family: 'Montserrat';
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 0; */
 }
 
 p {
@@ -487,16 +487,12 @@ footer {
 
 /* start Article Page  */
 
-#main-page {
-    display: flex;
-    flex-direction: column;
-}
-
 #title-art {
     background-color: #CF2B4E;
     margin: 20px;
     border-radius: 3px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-block: 4em;
 }
 
 #title-art h1 {
@@ -550,50 +546,113 @@ footer {
 }
 
 #button-art a {
-    padding: 20px;
+    font-size: 0.9em;
+    padding: 10px;
     width: 60%;
     box-shadow: 0px 0px 5px black;
     border-radius: 5px;
-    margin-bottom: 10px;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    text: black;
+    color: black;
     background-color: #CF2B4E;
+    transition: transform .2s;
 }
 
+#button-art a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+
+}
+
+/* section AVIS
+#avis {
+    display: flex;
+    width: 80%;
+    margin-inline: 10%;
+}
+
+#avis p {
+    text-align: justify;
+}
+
+#submitCom {
+    margin-block: 1em;
+
+#avis h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px #67C2CB;
+    font-weight: bolder;
+    background-color: #CF2B4E;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-block: 1em;
+} */
+#avis {
+    display: flex;
+    /* flex-direction: column; */
+    
+    width: 80%;
+    justify-content: space-around;
+}
+
+/*
+form {
+    font-family: 'Montserrat', sans-serif;
+    color: green;
+}
+
+textarea {
+    width: auto;
+} */
 @media screen and (min-width: 480px) {
-    #main-page {
-        flex-direction: row;
-        justify-content: space-around;
+    .main-page {
+        width: 80%;
+        margin: 0 auto;
+        margin-block: 4em;
     }
+    
     .img-restau-art {
         width: 60%;
     }
+    
     .dishes {
         flex-direction: row;
         margin-left: 1.5em;
     }
+    
     .img-dish {
         margin: 0;
         flex-direction: column;
     }
+    
     .dish {
         justify-content: space-between;
     }
+    
     #button-art {
         flex-direction: row;
         justify-content: space-evenly;
     }
+    
     .main-page p {
         margin-top: 20px;
     }
+    
     #button-art a {
         width: 30%;
         height: 2.5em;
     }
 }
-
 
 /* END Article Page  */
