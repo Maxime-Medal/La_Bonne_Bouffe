@@ -305,19 +305,15 @@ a:link {
 
 @media screen and (max-width: 600px) {
     #section-st-cyp {
-    
   }
+
   .img-st-cyp, .txt-st-cyp {
       width: 100%;
   }
-
+  
   .txt-st-cyp h2 {
       text-align: center;
   }
-
- 
-
-
 }
 
 /* fin responsive section st cyprien */
