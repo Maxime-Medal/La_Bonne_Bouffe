@@ -7,6 +7,7 @@ p {
     font-size: 0.8em;
 }
 
+
 /*code css header*/
 
 .header {
@@ -84,7 +85,7 @@ a:visited {
 .coup-de-coeur {
     display: flex;
     justify-content: space-around;
-   height: 35em;
+    height: 35em;
 }
 
 .card-coup-de-coeur {
@@ -94,7 +95,7 @@ a:visited {
     padding: 1em;
 }
 
-.card-title-coup-coeur{
+.card-title-coup-coeur {
     background-color: #CF2B4E;
     font-weight: 400;
     padding: 7px;
@@ -119,7 +120,6 @@ a:visited {
 
 .cards-discover h2 {
     margin-bottom: 1em;
-    
 }
 
 .card-discover1 {
@@ -155,12 +155,13 @@ a:visited {
 
 .resume-discover h2 {
     text-align: center;
-    color:#000000;
+    color: #000000;
 }
 
-.card-name a{
-    color:#000000 !important;
+.card-name a {
+    color: #000000 !important;
 }
+
 .card-body {
     font-size: 0.8em;
 }
@@ -186,54 +187,47 @@ a:visited {
 
 /*fin de l'effet */
 
-
-
 @media screen and (min-width: 600px) {
- 
-    .coup-de-coeur{
+    .coup-de-coeur {
         height: inherit;
         display: block;
     }
-        .cards-discover {
-            display: block;
-            width: 100%;
-            flex-direction: inherit;
-            flex-wrap: inherit;
-            padding: 1em;
-        }
-        
-        .card-coup-de-coeur {
-            display: block;
-            flex-direction: inherit;
-            width: 100%;
-            padding: 1em;
-          
-        }
+    .cards-discover {
+        display: block;
+        width: 100%;
+        flex-direction: inherit;
+        flex-wrap: inherit;
+        padding: 1em;
     }
+    .card-coup-de-coeur {
+        display: block;
+        flex-direction: inherit;
+        width: 100%;
+        padding: 1em;
+    }
+}
 
-    @media screen and (min-width: 1026px) {
- 
-        .coup-de-coeur{
-            height: inherit;
-            display: flex;
-        }
-            .cards-discover {
-                display: flex;
-                width: 47%;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            
-            .card-coup-de-coeur {
-                display: flex;
-                width: 47%;
-                flex-direction: column;
-                flex-wrap: wrap;
-              
-            }
-        }
+@media screen and (min-width: 1026px) {
+    .coup-de-coeur {
+        height: inherit;
+        display: flex;
+    }
+    .cards-discover {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card-coup-de-coeur {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 
-  /* fin responsive coup de coeur */
+
+/* fin responsive coup de coeur */
 
 
 /* Fin coup-de-coeur */
@@ -326,7 +320,8 @@ a:visited {
 
 
 /* Début de ST CYPRIEN */
-#section-st-cyp{
+
+#section-st-cyp {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5em;
@@ -337,10 +332,11 @@ a:visited {
     flex-wrap: wrap;
 }
 
-.img-st-cyp, .txt-st-cyp {
-  width: 47%;
-  justify-content: space-around;
-  padding: 15px;   
+.img-st-cyp,
+.txt-st-cyp {
+    width: 47%;
+    justify-content: space-around;
+    padding: 15px;
 }
 
 .img-st-cyp img {
@@ -351,42 +347,39 @@ a:visited {
 .txt-st-cyp p {
     text-align: justify;
 }
+
+
 /* responsive section st cyprien */
 
 @media screen and (max-width: 1024px) {
- 
     .coup-de-coeur {
         height: inherit !important;
     }
-
-  .img-st-cyp, .txt-st-cyp {
-      width: 100%;
-  }
-  
-  .txt-st-cyp h2 {
-      text-align: center;
-  }
-
-  .card-button {
-    margin: 0em;
-    margin-top: 2em
-  }
-
-  #page-web {
-    margin-bottom: 0em;
-    margin-top: 2em;
-  }
-
-  #card-categorie {
-    margin-top: 3em;
-  }
+    .img-st-cyp,
+    .txt-st-cyp {
+        width: 100%;
+    }
+    .txt-st-cyp h2 {
+        text-align: center;
+    }
+    .card-button {
+        margin: 0em;
+        margin-top: 2em
+    }
+    #page-web {
+        margin-bottom: 0em;
+        margin-top: 2em;
+    }
+    #card-categorie {
+        margin-top: 3em;
+    }
 }
+
 
 /* fin responsive section st cyprien */
 
 
 /* Fin de ST CYPRIEN */
-
 
 
 /* Je supprime définitivement le style bleu dégueulasse des balises a */
@@ -500,42 +493,34 @@ footer {
         align-items: center;
         color: white;
     }
-
     footer .menu-footer {
         width: 30%;
         margin: 0px;
     }
-
     footer .contact {
         width: 30%;
         margin: 0px;
     }
-
     footer .reseaux {
         width: 30%;
         margin: 0px;
     }
-
     footer .copyrights {
         width: 100%;
         margin: 0px;
     }
-
     /* ___Menu___ */
-
     .menu-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .menu-footer h1 {
         display: inline;
         text-align: center;
         margin: 0px;
         padding: 1rem
     }
-
     .menu-footer a {
         width: 100%;
         padding: 2px;
@@ -549,11 +534,9 @@ footer {
         margin-bottom: 0px;
     }
     /* ___Contact___ */
-
     .contact {
         margin: 0px;
     }
-
     .contact h1 {
         display: inline;
         text-align: center;
@@ -561,10 +544,7 @@ footer {
         padding: 1rem;
         width: 100%;
     }
-
-  
     /* ___Réseaux___ */
-  
     .reseaux h1 {
         display: inline;
         text-align: center;
@@ -583,7 +563,9 @@ footer {
     }
 }
 
+
 /* _______ FIN FOOTER _______ */
+
 
 /* Page tous les restaurants */
 
@@ -591,7 +573,6 @@ footer {
     width: 80%;
     margin: 0 auto;
 }
-
 
 .categorie {
     text-align: center;
@@ -645,6 +626,7 @@ footer {
     }
 }
 
+
 /* Fin responsive restaurants  */
 
 
@@ -697,6 +679,7 @@ footer {
 .main-page p {
     text-align: justify;
     margin: 10px;
+    padding: 15px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(103, 194, 203, 0.2);
     font-size: 1rem;
@@ -729,6 +712,16 @@ footer {
 #button-art a:hover {
     text-decoration: underline;
     transform: scale(1.2);
+}
+
+#like-card {
+    display: flex;
+    flex-direction: row;
+}
+
+#likeCount {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -823,7 +816,7 @@ textarea {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
-    margin-top : 5rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -914,11 +907,9 @@ textarea {
         margin-top: 10rem;
         margin-bottom: 10rem;
     }
-
     .contact .photo {
         width: 35%
     }
-
     .contact form {
         width: 60%
     }
