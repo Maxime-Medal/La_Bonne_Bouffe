@@ -49,8 +49,12 @@ li:hover {
     transform: scale(1.1);
 }
 
-.nav a:link,
-a:visited {
+.nav a:link {
+    color: #FFDA2A !important;
+    text-decoration: none;
+}
+
+.nav a:visited {
     color: #FFDA2A !important;
     text-decoration: none;
 }
@@ -250,13 +254,13 @@ a:visited {
     text-align: center;
 }
 
+#card-categories .discover {
+    font-size: 2.5rem;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
-}
-
-#card-categories>h2 {
-    text-align: center;
 }
 
 .card {
@@ -395,7 +399,6 @@ a:link {
     text-decoration: none;
 }
 
-
 /* C'est cadeau, c'est pour moi ! */
 
 
@@ -438,7 +441,7 @@ footer {
 
 /* ___Contact___ */
 
-.contact {
+.contact-footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -446,7 +449,7 @@ footer {
     margin-top: 1.1rem;
 }
 
-.contact h1 {
+.contact-footer h1 {
     display: none
 }
 
@@ -454,10 +457,11 @@ footer {
     font-weight: bold;
 }
 
-.contact p {
+.contact-footer p {
     width: 100%;
     text-align: center;
-    margin: 5px
+    margin: 5px;
+    font-size: .7rem;
 }
 
 
@@ -506,7 +510,7 @@ footer {
         margin: 0px;
     }
 
-    footer .contact {
+    footer .contact-footer {
         width: 30%;
         margin: 0px;
     }
@@ -548,18 +552,23 @@ footer {
     .menu-footer .tous {
         margin-bottom: 0px;
     }
+
     /* ___Contact___ */
 
-    .contact {
+    .contact-footer {
         margin: 0px;
     }
 
-    .contact h1 {
+    .contact-footer h1 {
         display: inline;
         text-align: center;
         margin: 0px;
         padding: 1rem;
         width: 100%;
+    }
+
+    .contact-footer p {
+        font-size: .9rem;
     }
 
   
@@ -577,13 +586,17 @@ footer {
     .reseaux-logo {
         padding: .5rem
     }
+
     /* ___Copyrights___ */
+
     .copyrights p {
         font-size: .8rem;
     }
 }
 
 /* _______ FIN FOOTER _______ */
+
+
 
 /* Page tous les restaurants */
 
@@ -642,6 +655,9 @@ footer {
     }
     .card-description {
         text-align: justify;
+    }
+    #card-categories .discover {
+        font-size: 1.2rem;
     }
 }
 
