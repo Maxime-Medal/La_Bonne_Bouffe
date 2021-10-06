@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    /* margin: 0; */
+    margin: 0;
 }
 
 
@@ -13,52 +13,54 @@ p {
 /*code css header*/
 
 .header {
+    position: fixed;
+    display: flex;
     background-color: #CF2B4E;
     width: 100%;
-    display: flex;
+    justify-content: space-between;
 }
 
-.container {
+.logo-container {
     display: flex;
-    width: 100%;
 }
 
 .logo {
     width: 40%;
     padding-left: 15px;
-    justify-content: flex-start;
+    transition: transform .2s;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+.logo:hover {
+    transform: scale(1.2);
 }
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-    color: white;
+    padding-right: 25px;
+    color: #FFDA2A;
 }
 
 li {
     padding-left: 30px;
+    justify-content: space-around;
+    transition: transform .2s;
+    font-weight: 500;
+}
+
+li:hover {
+    transform: scale(1.1);
 }
 
 .nav a:link,
 a:visited {
-    color:#000000 !important;
+    color: #FFDA2A !important;
     text-decoration: none;
 }
 
 .big-logo {
-    width: 100%;
-    margin: 0;
     background-color: #CF2B4E;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding-top: 60px;
     padding-bottom: 40px;
 }
 
@@ -390,7 +392,10 @@ footer {
 /* ___Contact___ */
 
 .contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 1.1rem;
 }
 
@@ -413,7 +418,8 @@ footer {
 
 .reseaux {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.2rem;
 }
 
@@ -441,27 +447,48 @@ footer {
     footer {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
         font-size: 1rem;
         align-items: center;
         color: white;
     }
-    footer section {
+
+    footer .menu-footer {
         width: 30%;
         margin: 0px;
     }
-    footer h1 {
+
+    footer .contact {
+        width: 30%;
         margin: 0px;
-        padding: 1rem
     }
+
+    footer .reseaux {
+        width: 30%;
+        margin: 0px;
+    }
+
+    footer .copyrights {
+        width: 100%;
+        margin: 0px;
+    }
+
     /* ___Menu___ */
-    .menu-footer h1 {
-        display: inline
-    }
+
     .menu-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .menu-footer h1 {
+        display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem
+    }
+
     .menu-footer a {
         width: 100%;
         padding: 2px;
@@ -475,23 +502,27 @@ footer {
         margin-bottom: 0px;
     }
     /* ___Contact___ */
-    .contact h1 {
-        display: inline
-    }
+
     .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 0px;
     }
-    /* ___Réseaux___ */
-    .reseaux h1 {
+
+    .contact h1 {
         display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem;
         width: 100%;
     }
-    .reseaux {
+
+  
+    /* ___Réseaux___ */
+  
+    .reseaux h1 {
+        display: inline;
         text-align: center;
-        display: block;
+        margin: 0px;
+        padding: 1rem
     }
     .img-footer {
         margin: 1rem
@@ -505,6 +536,7 @@ footer {
     }
 }
 
+/* _______ FIN FOOTER _______ */
 
 /* Page tous les restaurants */
 
@@ -620,6 +652,7 @@ footer {
     margin: 10px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(103, 194, 203, 0.2);
+    font-size: 1rem;
 }
 
 #button-art {
@@ -627,6 +660,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-block: 15px;
 }
 
 #button-art a {
@@ -651,8 +685,10 @@ footer {
 }
 
 
-/* section AVIS
-#avis {
+/* section AVIS  */
+
+
+/* #avis {
     display: flex;
     width: 80%;
     margin-inline: 10%;
@@ -664,31 +700,28 @@ footer {
 
 #submitCom {
     margin-block: 1em;
-
-#avis h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 25px;
-    text-shadow: 1px 1px 3px #67C2CB;
-    font-weight: bolder;
-    background-color: #CF2B4E;
-    margin: 20px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    margin-block: 1em;
-} */
-
-#avis {
-    display: flex;
-    /* flex-direction: column; */
+    #avis h2 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 25px;
+        text-shadow: 1px 1px 3px #67C2CB;
+        font-weight: bolder;
+        background-color: #CF2B4E;
+        margin: 20px;
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0);
+        margin-block: 1em;
+    }
+    #avis {
+        display: flex;
+        flex-direction: column
+    
     width: 80%;
     justify-content: space-around;
 }
-
-
 /*
 form {
     font-family: 'Montserrat', sans-serif;
@@ -741,20 +774,33 @@ textarea {
 .contact {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-top : 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.contact .photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .contact iframe {
+    width: 100%;
     margin: 1rem;
 }
 
 .contact h2 {
+    width: 100%;
     font-weight: bold;
     color: #67C2CB;
+    text-align: center;
+}
+
+.contact form {
+    width: 80%
 }
 
 .contact form div {
@@ -764,13 +810,13 @@ textarea {
 }
 
 .contact form label {
-    width: 20%;
+    width: 25%;
     color: #CF2B4E;
     font-weight: bold;
 }
 
 .contact form input {
-    width: 70%;
+    width: 65%;
     border: hidden;
     border-bottom: solid #FFDA2A 1px;
     margin-left: 1rem;
@@ -791,6 +837,7 @@ textarea {
     padding: .5rem;
     font-weight: bold;
     color: white;
+    border: none;
 }
 
 .contact textarea {
@@ -811,7 +858,23 @@ textarea {
 
 /* _____ PAGE CONTACT RESPONSIVE Mobile > Desktop _____ */
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .contact .photo {
+        width: 35%
+    }
+
+    .contact form {
+        width: 60%
+    }
+}
 
 
 /* _____ FIN PAGE CONTACT _____ */
