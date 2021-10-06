@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bonne Bouffe</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo-container"></div>
+          <a href="#"><img class="logo" src="logo.jpg" alt="logo"></a>
+          <nav class="nav">
+            <ul>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Manger Fat</a></li>
+                <li><a href="#">Manger Léger</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <div class="big-logo">
+        <img src="image-header-v2.jpg">
+    </div>
+
+    <section class="contact">
+        <div class="photo">
+            <iframe src="https://giphy.com/embed/12MWTDpnzvFbSU" width="60%" height="auto" frameBorder="0" allowFullScreen></iframe>
+            <h2>Contactez-nous !</h2>
+        </div>
+
+            <form class="formulaire">
+                <div>
+                    <label for="prénom" class="infos">Prénom</label>
+                    <input type="text" id="prénom" name="user_prénom">
+                </div>
+                <div>
+                    <label for="nom" class="infos">Nom</label>
+                    <input type="text" id="nom" name="user_nom">
+                </div>
+                <div>
+                    <label for="mail" class="infos">E-mail</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div class="msg">
+                    <textarea id="msg" name="user_message" placeholder="Que voulez-vous nous dire ?"></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+    </section>
+
+    <footer>
+        <section class="menu-footer">
+            <h1>Menu</h1>
+            <a class="tous" href="restaurants.html">Tous les restaurants</a>
+            <a href="restaurants.html#fat">Manger FAT</a>
+            <a href="restaurants.html#frat">Manger FRAT</a>
+            <a href="restaurants.html#frais">Manger FRAIS</a>
+        </section>
+        <section class ="contact">
+            <h1>Contact</h1>
+            <p><span class = catg>E-mail</span><br>contact@labonnebouffe.fr</p>
+            <p><span class = catg>Adresse</span><br>18 place Rouguet, 31300 Toulouse</p>
+        </section>
+        <section class="reseaux">
+            <h1>Retrouvez-nous sur les réseaux sociaux</h1>
+            <div class="img-footer">
+                <img src="photos/facebook.png" alt="Facebook" class="reseaux-logo" height="30" width="auto">
+                <img src="photos/instagram.png" alt="Instagram" class="reseaux-logo" height="30" width="auto">
+                <img src="photos/pinterest.png" alt="Pinterest" class="reseaux-logo" height="30" width="auto">
+            </div>
+        </section>
+        <section class="copyrights">
+            <p>© 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés</p>
+        </section>
+    </footer>
+</body>
+</html>
