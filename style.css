@@ -280,6 +280,24 @@ a:visited {
 /* Fin categorie restaurant FAT FRAT FRAIS */
 
 
+/* Début de ST CYPRIEN */
+.st-cyp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-st-cyp, .txt-st-cyp {
+  width: 46%;
+  justify-content: space-around;
+  padding: 15px;   
+}
+
+
+
+/* Fin de ST CYPRIEN */
+
+
+
 /* Je supprime définitivement le style bleu dégueulasse des balises a */
 
 a:link {
@@ -330,7 +348,10 @@ footer {
 /* ___Contact___ */
 
 .contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 1.1rem;
 }
 
@@ -353,7 +374,8 @@ footer {
 
 .reseaux {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.2rem;
 }
 
@@ -381,27 +403,48 @@ footer {
     footer {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
         font-size: 1rem;
         align-items: center;
         color: white;
     }
-    footer section {
+
+    footer .menu-footer {
         width: 30%;
         margin: 0px;
     }
-    footer h1 {
+
+    footer .contact {
+        width: 30%;
         margin: 0px;
-        padding: 1rem
     }
+
+    footer .reseaux {
+        width: 30%;
+        margin: 0px;
+    }
+
+    footer .copyrights {
+        width: 100%;
+        margin: 0px;
+    }
+
     /* ___Menu___ */
-    .menu-footer h1 {
-        display: inline
-    }
+
     .menu-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .menu-footer h1 {
+        display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem
+    }
+
     .menu-footer a {
         width: 100%;
         padding: 2px;
@@ -415,23 +458,27 @@ footer {
         margin-bottom: 0px;
     }
     /* ___Contact___ */
-    .contact h1 {
-        display: inline
-    }
+
     .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 0px;
     }
-    /* ___Réseaux___ */
-    .reseaux h1 {
+
+    .contact h1 {
         display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem;
         width: 100%;
     }
-    .reseaux {
+
+  
+    /* ___Réseaux___ */
+  
+    .reseaux h1 {
+        display: inline;
         text-align: center;
-        display: block;
+        margin: 0px;
+        padding: 1rem
     }
     .img-footer {
         margin: 1rem
@@ -445,6 +492,7 @@ footer {
     }
 }
 
+/* _______ FIN FOOTER _______ */
 
 /* Page tous les restaurants */
 
@@ -675,20 +723,33 @@ textarea {
 .contact {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-top : 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.contact .photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .contact iframe {
+    width: 100%;
     margin: 1rem;
 }
 
 .contact h2 {
+    width: 100%;
     font-weight: bold;
     color: #67C2CB;
+    text-align: center;
+}
+
+.contact form {
+    width: 80%
 }
 
 .contact form div {
@@ -698,13 +759,13 @@ textarea {
 }
 
 .contact form label {
-    width: 20%;
+    width: 25%;
     color: #CF2B4E;
     font-weight: bold;
 }
 
 .contact form input {
-    width: 70%;
+    width: 65%;
     border: hidden;
     border-bottom: solid #FFDA2A 1px;
     margin-left: 1rem;
@@ -725,6 +786,7 @@ textarea {
     padding: .5rem;
     font-weight: bold;
     color: white;
+    border: none;
 }
 
 .contact textarea {
@@ -745,7 +807,23 @@ textarea {
 
 /* _____ PAGE CONTACT RESPONSIVE Mobile > Desktop _____ */
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .contact .photo {
+        width: 35%
+    }
+
+    .contact form {
+        width: 60%
+    }
+}
 
 
 /* _____ FIN PAGE CONTACT _____ */
