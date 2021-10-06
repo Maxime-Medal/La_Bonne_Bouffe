@@ -15,10 +15,10 @@ p {
     display: flex;
 }
 
-/* .container {
+.container {
     display: flex;
     width: 100%;
-} */
+}
 
 .logo {
     width: 40%;
@@ -69,17 +69,8 @@ p {
     display: none;
 }
 
-/* .menu-list li > a::after {
-    display: block;
-    content: "";
-    width: 0;
-    height: 1px;
-    background-color: #FFDA2A;
-    transition: width .4s;
-}
-.menu-list ul li:hover > a::after {
-    width: 100%;
-} */
+
+
 
 
 /* fin code css header*/
