@@ -8,8 +8,3 @@ function toggleMenu () {
 
 toggleMenu();
 
-function Icon () {
-    const burgerIcon = document.querySelector('#burger-icon');
-    const closeIcon = document.querySelector('#close-icon');
-    
-}
