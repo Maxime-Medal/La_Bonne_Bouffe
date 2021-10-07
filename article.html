@@ -62,23 +62,48 @@
             ➡️ CLICK ICI ⬅️</strong></a>
 
     </div>
-    <!-- <section id="avis">
+
+    <section id="like-card">
+        <div id="like-card-buttons">
+            <input type="button" id="likeButton" value="J’aime !">
+            <div id=dislikeButtonDiv></div>
+        </div>
+        <div id="likeCount">
+            
+            <p><div id="count"></div> personnes ont aimé me croquer !</p>
+            <img id="imgLike" src="/photos/favicon.ico" alt="image d’un coeur"/>
+        </div>
+    </section>
+    <section class="avis">
         <h2>Avis de la comunauté</h2>
         <fieldset>
-            <legend>Avis gourmands</legend>
-            <form method="post" action="traitement.php">
+            <!-- <legend>Avis gourmands</legend> -->
+            <form id=form method="post" action="traitement.php">
                 <p>
-                    <label for="pseudo">Votre Peudo</label><input type="text" name="pseudo" id="pseudo" placeholder="Ton pseudo" size="30" maxlength="25" autofocus/>
+                    <label for="pseudo">Votre Pseudo : </label>
+                    <input type="text" name="pseudo" placeholder="Ton pseudo" size="30" maxlength="25" 
+                    id="submitPseudo"
+                    value=""
+                    autofocus/>
                 </p>
                 <p>
-                    <label for="suggest">Que souhaitez vous nous communiquer?</label><br/>
+                    <label for="suggest">Que souhaitez-vous nous communiquer ?</label><br/>
                     </label name="suggest" id="ameliorer">
-                    <textarea cols="80" rows="10" placeholder="Indiquer nous vos suggestions 😃"></textarea>
+                    <textarea cols="80" rows="10" placeholder="Indiquez nous vos suggestions 😃"
+                    id="submitCom"
+                    value=""></textarea>
                 </p>
-                <input id=" submitCom " type="submit " name="send " value="Envoyer! ">
+                <input 
+                type="submit" 
+                name="send" 
+                value="Envoyer!">
             </form>
         </fieldset>
-    </section> -->
+        <h2>Avis des internautes :</h2>
+        <ul id="usersCom">
+            <!-- <li></li> -->
+        </ul>
+    </section>
 
     <footer>
         <section class="menu-footer ">
@@ -105,7 +130,7 @@
             <!-- © 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés -->
         </section>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
