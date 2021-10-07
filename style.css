@@ -68,6 +68,18 @@ a:visited {
     margin-right: auto;
 }
 
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: #FFDA2A;
+}
+
+.menu-list li {
+    padding-left: 30px;
+}
+
 
 /* fin code css header*/
 
