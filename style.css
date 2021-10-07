@@ -35,8 +35,14 @@ p {
 .menu-list {
     list-style: none;
     display: flex;
-    padding-right: 25px;
+    justify-content: flex-end;
+    padding-right: 15px;
     color: #FFDA2A;
+}
+    
+
+.menu-list li {
+    padding-left: 30px;
 }
 
 li {
@@ -73,16 +79,8 @@ li:hover {
     margin-right: auto;
 }
 
-.menu-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 15px;
-    color: #FFDA2A;
-}
-
-.menu-list li {
-    padding-left: 30px;
+#burger-icon {
+    display: none;
 }
 
 
@@ -230,19 +228,18 @@ li:hover {
         display: flex;
         width: 47%;
         flex-direction: column;
+        /* padding: 1em;
+        flex-wrap: nowrap; */
         flex-wrap: wrap;
     }
     .card-coup-de-coeur {
         display: flex;
         width: 47%;
+        padding: 1em;
         flex-direction: column;
         flex-wrap: wrap;
     }
 }
-
-
-/* fin responsive coup de coeur */
-
 
 /* Fin coup-de-coeur */
 
@@ -508,14 +505,18 @@ footer {
         align-items: center;
         color: white;
     }
+
     footer .menu-footer {
         width: 30%;
         margin: 0px;
     }
+    
     footer .contact-footer {
         width: 30%;
         margin: 0px;
     }
+    /* ___Menu___ */
+   
     footer .reseaux {
         width: 30%;
         margin: 0px;
