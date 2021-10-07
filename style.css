@@ -736,53 +736,87 @@ footer {
 }
 
 
-/* section AVIS  */
-
-
-/* #avis {
-    display: flex;
-    width: 80%;
-    margin-inline: 10%;
-}
-
-#avis p {
-    text-align: justify;
-}
-
-#submitCom {
-    margin-block: 1em;
-
-#avis h2 {
+/* Section avis de la communauté (article) */
+.avis {
+    display: block;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 25px;
-    text-shadow: 1px 1px 3px #67C2CB;
-    font-weight: bolder;
-    background-color: #CF2B4E;
-    margin: 20px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-    margin-block: 1em;
-} 
-
-#avis {
+    max-width: 600px;
+    margin: auto;
+}
+fieldset {
+    background-color: rgba(207, 43, 78, 0.9);
+    border-radius: 10px;
+}
+#usersCom {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    flex-direction: column-reverse;
+    list-style: none;
+    color: black;
+}
+.card-avis {
+    margin: 0.2em;
+    background-color: rgba(207, 43, 78, 0.9);
+    padding: 0.5em;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    text-align: left;
+    max-width: 50em;
+}
+.pseudo {
+    color: white;
+    font-weight: 700;
+    margin: 0.5em 1em 0em 1em;
+}
+.date-of-com {
+    font-style: italic;
+    color: rgb(194, 194, 194);
+    margin: 0em 1em 0em 4em;
+    
+}
+.text-avis {
+    background-color: whitesmoke;
+    margin: 0.5em 1em 1em 0.5em;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+/* Fin section avis de la communauté (article) */
+
+/* Section Bouton "j'aime" */
+#like-card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    margin-bottom: 1em;
+}
+#likeButton {
+    background-color: white;
+    color: black;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 10px 10px 0px 0px;
+}
+#dislikeButton {
+    background-color: white;
+    color: black;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0px 0px 10px 10px;
+}
+#likeCount {
+    display:flex;
     justify-content: space-around;
+    vertical-align: middle;
 }
-
-form {
-    font-family: 'Montserrat', sans-serif;
-    color: green;
+#like-card p {
+    margin: 0em 1em 0em 1em;
 }
-
-textarea {
-    width: auto;
-} */
+#count {
+    margin: 0em 1em 0em 1em;
+}
+/* Fin de section Bouton "j'aime" */
 
 @media screen and (min-width: 480px) {
     .main-page {
