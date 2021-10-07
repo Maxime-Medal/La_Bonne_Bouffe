@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
@@ -7,29 +7,70 @@ p {
     font-size: 0.8em;
 }
 
+
 /*code css header*/
 
 .header {
+    position: fixed;
+    display: flex;
     background-color: #CF2B4E;
     width: 100%;
-    display: flex;
+    justify-content: space-between;
 }
 
-.container {
+.logo-container {
     display: flex;
-    width: 100%;
 }
 
 .logo {
     width: 40%;
     padding-left: 15px;
-    justify-content: flex-start;
+    transition: transform .2s;
 }
 
-.nav {
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.menu-list {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    padding-right: 25px;
+    color: #FFDA2A;
+}
+
+li {
+    padding-left: 30px;
+    justify-content: space-around;
+    transition: transform .2s;
+    font-weight: 500;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.nav a:link {
+    color: #FFDA2A !important;
+    text-decoration: none;
+}
+
+.nav a:visited {
+    color: #FFDA2A !important;
+    text-decoration: none;
+}
+
+.big-logo {
+    background-color: #CF2B4E;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.big-logo img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-list {
@@ -43,34 +84,6 @@ p {
 .menu-list li {
     padding-left: 30px;
 }
-
-.nav a:link, a:visited {
-    color: #FFDA2A !important;
-    text-decoration: none;
-}
-
-.big-logo {
-    width: 100%;
-    margin: 0;
-    background-color: #CF2B4E;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 40px;
-}
-
-.big-logo img {
-    width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#burger-icon {
-    display: none;
-}
-
-
-
 
 
 /* fin code css header*/
@@ -97,8 +110,16 @@ p {
     padding: 1em;
 }
 
+.card-title-coup-coeur {
+    background-color: #CF2B4E;
+    font-weight: 400;
+    padding: 7px;
+    color: #ffffff !important;
+    font-style: 1.2em !important;
+}
+
 .card-coup-de-coeur img {
-    height: 20em;
+    /*height: 20em;*/
     border-radius: 30px;
     max-width: 100%;
     margin-bottom: 1em;
@@ -149,6 +170,11 @@ p {
 
 .resume-discover h2 {
     text-align: center;
+    color: #000000;
+}
+
+.card-name a {
+    color: #000000 !important;
 }
 
 .card-body {
@@ -172,25 +198,54 @@ p {
     opacity: .5;
 }
 
+
 /*fin de l'effet */
 
 @media screen and (min-width: 600px) {
+    .coup-de-coeur {
+        height: inherit;
+        display: block;
+    }
     .cards-discover {
-        display: flex;
-        width: 47%;
-        flex-direction: column;
+        display: block;
+        width: 100%;
+        flex-direction: inherit;
+        flex-wrap: inherit;
         padding: 1em;
-        flex-wrap: nowrap;
     }
     .card-coup-de-coeur {
-        display: flex;
-        flex-direction: column;
-        width: 47%;
+        display: block;
+        flex-direction: inherit;
+        width: 100%;
         padding: 1em;
     }
 }
 
+@media screen and (min-width: 1026px) {
+    .coup-de-coeur {
+        height: inherit;
+        display: flex;
+    }
+    .cards-discover {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card-coup-de-coeur {
+        display: flex;
+        width: 47%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* fin responsive coup de coeur */
+
+
 /* Fin coup-de-coeur */
+
 
 /* Début section FAT FRAT FRAIS*/
 
@@ -203,13 +258,13 @@ p {
     text-align: center;
 }
 
+#card-categories .discover {
+    font-size: 2.5rem;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
-}
-
-#card-categories>h2 {
-    text-align: center;
 }
 
 .card {
@@ -269,12 +324,77 @@ p {
 
 .card-button button a:hover {
     background-color: #CF2B4E;
-    color: #ffffff;
+    color: #ffffff !important;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
 
+
 /* Fin categorie restaurant FAT FRAT FRAIS */
+
+
+/* Début de ST CYPRIEN */
+
+#section-st-cyp {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.st-cyp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-st-cyp,
+.txt-st-cyp {
+    width: 47%;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.img-st-cyp img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.txt-st-cyp p {
+    text-align: justify;
+}
+
+
+/* responsive section st cyprien */
+
+@media screen and (max-width: 1024px) {
+    .coup-de-coeur {
+        height: inherit !important;
+    }
+    .img-st-cyp,
+    .txt-st-cyp {
+        width: 100%;
+    }
+    .txt-st-cyp h2 {
+        text-align: center;
+    }
+    .card-button {
+        margin: 0em;
+        margin-top: 2em
+    }
+    #page-web {
+        margin-bottom: 0em;
+        margin-top: 2em;
+    }
+    #card-categorie {
+        margin-top: 3em;
+    }
+}
+
+
+/* fin responsive section st cyprien */
+
+
+/* Fin de ST CYPRIEN */
+
 
 /* Je supprime définitivement le style bleu dégueulasse des balises a */
 
@@ -282,15 +402,20 @@ a:link {
     text-decoration: none;
 }
 
+
 /* C'est cadeau, c'est pour moi ! */
+
 
 /* _______FOOTER (mobile first)_______ */
 
 footer {
     font-size: .8rem;
     background-color: #CF2B4E;
+    color: white;
     padding: 1rem;
+    flex-wrap: wrap;
 }
+
 
 /* ___Menu___ */
 
@@ -317,14 +442,18 @@ footer {
     display: none
 }
 
+
 /* ___Contact___ */
 
-.contact {
-    display: block;
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 1.1rem;
 }
 
-.contact h1 {
+.contact-footer h1 {
     display: none
 }
 
@@ -332,17 +461,20 @@ footer {
     font-weight: bold;
 }
 
-.contact p {
+.contact-footer p {
     width: 100%;
     text-align: center;
-    margin: 5px
+    margin: 5px;
+    font-size: .7rem;
 }
+
 
 /* ___Réseaux___ */
 
 .reseaux {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1.2rem;
 }
 
@@ -354,32 +486,55 @@ footer {
     display: none
 }
 
+
+/* ___Copyrights___ */
+
+.copyrights p {
+    width: 100%;
+    font-size: .6rem;
+    text-align: center;
+}
+
+
 /* _____MEDIA QUERY FOOTER mobile > desktop_____ */
 
 @media screen and (min-width: 1200px) {
     footer {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
         font-size: 1rem;
         align-items: center;
         color: white;
     }
-    footer section {
+    footer .menu-footer {
         width: 30%;
         margin: 0px;
     }
-    footer h1 {
+    footer .contact-footer {
+        width: 30%;
         margin: 0px;
-        padding: 1rem
+    }
+    footer .reseaux {
+        width: 30%;
+        margin: 0px;
+    }
+    footer .copyrights {
+        width: 100%;
+        margin: 0px;
     }
     /* ___Menu___ */
-    .menu-footer h1 {
-        display: inline
-    }
     .menu-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .menu-footer h1 {
+        display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem
     }
     .menu-footer a {
         width: 100%;
@@ -394,23 +549,25 @@ footer {
         margin-bottom: 0px;
     }
     /* ___Contact___ */
-    .contact h1 {
-        display: inline
-    }
-    .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .contact-footer {
         margin: 0px;
+    }
+    .contact-footer h1 {
+        display: inline;
+        text-align: center;
+        margin: 0px;
+        padding: 1rem;
+        width: 100%;
+    }
+    .contact-footer p {
+        font-size: .9rem;
     }
     /* ___Réseaux___ */
     .reseaux h1 {
         display: inline;
-        width: 100%;
-    }
-    .reseaux {
         text-align: center;
-        display: block;
+        margin: 0px;
+        padding: 1rem
     }
     .img-footer {
         margin: 1rem
@@ -418,7 +575,15 @@ footer {
     .reseaux-logo {
         padding: .5rem
     }
+    /* ___Copyrights___ */
+    .copyrights p {
+        font-size: .8rem;
+    }
 }
+
+
+/* _______ FIN FOOTER _______ */
+
 
 /* Page tous les restaurants */
 
@@ -437,13 +602,18 @@ footer {
     margin-top: 3em;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .restaurant-card {
     width: 30% !important;
 }
 
+
 /* responsive page tous les restaurants */
 
-@media only screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px) {
     .categorie {
         font-size: 1em;
         text-align: center !important;
@@ -456,7 +626,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .categorie {
         font-size: 1em;
         text-align: center !important;
@@ -472,20 +642,23 @@ footer {
     .card-description {
         text-align: justify;
     }
+    #card-categories .discover {
+        font-size: 1.2rem;
+    }
 }
+
+
+/* Fin responsive restaurants  */
+
 
 /* start Article Page  */
-
-#main-page {
-    display: flex;
-    flex-direction: column;
-}
 
 #title-art {
     background-color: #CF2B4E;
     margin: 20px;
     border-radius: 3px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    margin-block: 4em;
 }
 
 #title-art h1 {
@@ -527,8 +700,10 @@ footer {
 .main-page p {
     text-align: justify;
     margin: 10px;
+    padding: 15px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(103, 194, 203, 0.2);
+    font-size: 1rem;
 }
 
 #button-art {
@@ -536,26 +711,128 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    padding-block: 15px;
 }
 
 #button-art a {
-    padding: 20px;
+    font-size: 0.9em;
+    padding: 10px;
     width: 60%;
     box-shadow: 0px 0px 5px black;
     border-radius: 5px;
-    margin-bottom: 10px;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: black;
     background-color: #CF2B4E;
+    transition: transform .2s;
 }
 
+#button-art a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+#like-card {
+    display: flex;
+    flex-direction: row;
+}
+
+#likeCount {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Section avis de la communauté (article) */
+.avis {
+    display: block;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+fieldset {
+    background-color: rgba(207, 43, 78, 0.9);
+    border-radius: 10px;
+}
+#usersCom {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    color: black;
+}
+.card-avis {
+    margin: 0.2em;
+    background-color: rgba(207, 43, 78, 0.9);
+    padding: 0.5em;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    text-align: left;
+    max-width: 50em;
+}
+.pseudo {
+    color: white;
+    font-weight: 700;
+    margin: 0.5em 1em 0em 1em;
+}
+.date-of-com {
+    font-style: italic;
+    color: rgb(194, 194, 194);
+    margin: 0em 1em 0em 4em;
+    
+}
+.text-avis {
+    background-color: whitesmoke;
+    margin: 0.5em 1em 1em 0.5em;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+/* Fin section avis de la communauté (article) */
+
+/* Section Bouton "j'aime" */
+#like-card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    margin-bottom: 1em;
+}
+#likeButton {
+    background-color: white;
+    color: black;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 10px 10px 0px 0px;
+}
+#dislikeButton {
+    background-color: white;
+    color: black;
+    width: 10em;
+    padding: 0.5em;
+    border-radius: 0px 0px 10px 10px;
+}
+#likeCount {
+    display:flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+#like-card p {
+    margin: 0em 1em 0em 1em;
+}
+#count {
+    margin: 0em 1em 0em 1em;
+}
+/* Fin de section Bouton "j'aime" */
+
 @media screen and (min-width: 480px) {
-    #main-page {
-        flex-direction: row;
-        justify-content: space-around;
+    .main-page {
+        width: 80%;
+        margin: 0 auto;
+        margin-block: 4em;
     }
     .img-restau-art {
         width: 60%;
@@ -584,4 +861,114 @@ footer {
     }
 }
 
+
 /* END Article Page  */
+
+
+/* _______ PAGE CONTACT ______ */
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact iframe {
+    width: 100%;
+    margin: 1rem;
+}
+
+.contact h2 {
+    width: 100%;
+    font-weight: bold;
+    color: #67C2CB;
+    text-align: center;
+}
+
+.contact form {
+    width: 80%
+}
+
+.contact form div {
+    display: flex;
+    justify-content: center;
+    padding: .3rem
+}
+
+.contact form label {
+    width: 25%;
+    color: #CF2B4E;
+    font-weight: bold;
+}
+
+.contact form input {
+    width: 65%;
+    border: hidden;
+    border-bottom: solid #FFDA2A 1px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font: inherit;
+    color: #CF2B4E;
+}
+
+.contact form input:focus-visible {
+    outline: none;
+    background-color: #ffdc2a6c;
+    border: none;
+}
+
+.contact form button {
+    width: 100%;
+    background-color: #67C2CB;
+    padding: .5rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.contact textarea {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    width: 100%;
+    height: 10rem;
+    border: solid 2px #67C2CB;
+}
+
+.contact textarea:focus-visible {
+    outline: none;
+    background-color: #67c3cb21;
+    border: solid 2px #67C2CB;
+}
+
+
+/* _____ PAGE CONTACT RESPONSIVE Mobile > Desktop _____ */
+
+@media screen and (min-width: 1200px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .contact .photo {
+        width: 35%
+    }
+    .contact form {
+        width: 60%
+    }
+}
+
+
+/* _____ FIN PAGE CONTACT _____ */
