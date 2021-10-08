@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,173 +9,145 @@
     <link rel="stylesheet" href="style.css"> </link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/favicon_hotDog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/photos/favicon_hotDog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/photos/favicon_hotDog/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-          <div class="logo-container"></div>
-          <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
-        
-          <nav class="nav">
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
+        </div>
+
+        <nav class="nav">
             <ul>
                 <li><a href="restaurants.html">Restaurants</a></li>
                 <li><a href="restaurants.html#fat">Manger Fat</a></li>
+                <li><a href="restaurants.html#frat">Manger Frat</a></li>
                 <li><a href="restaurants.html#frais">Manger Frais</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
-        </div>
+        </nav>
     </header>
- <div class="big-logo">
-    <img src="photos/image-header-v2.jpg">
-</div>
+    <div class="big-logo">
+        <img src="photos/image-header-v2.jpg">
+    </div>
     <section id="card-categories" class="categorie-container">
-        <h2>Découvrez tous nos restaurants</h2>
-        <h2 id="fat" class="categorie">Les restaurants FAT</h2>
+        <h2 id="fat" class="discover">Découvrez tous nos restaurants</h2>
+        <h2 class="categorie">Les restaurants <span class="bold">Fat</span></h2>
         <div class="card-container opacity-color">
             <div class="card restaurant-card ">
                 <div class="card-img">
-                    <img src="photos/kebab.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/kebab.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3>Kebab de ST Cyp</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3>Kebab de ST Cyp</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
                 <div class="card-img">
-                    <img src= "photos/pizza-alexis.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/pizza-alexis.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3>Pizza de Cyprien </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3>Pizza de Cyprien </h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
-             
+
                 <div class="card-img">
-                    <img src="photos/burgerco.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/burgerco.jpg" alt="Un restaurant" /></a>
                 </div>
-                <div class="card-description">
+
+                <div id="frat" class="card-description">
                     <h3> Burger'N CO</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                <div class="card-description">
+                    <a href="article.html"><h3> Burger'N CO</h3></a>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
         </div>
-        <h2 id="frat" class="categorie">Les restaurants FRAT</h2>
+        <h2 class="categorie">Les restaurants <span class="bold">Frat</span></h2>
         <div class="card-container opacity-color">
-            
+
             <div class="card  restaurant-card">
                 <div class="card-img">
-                    <img src="photos/crocmichel.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/crocmichel.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3>Croc Michel</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3>Croc Michel</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
                 <div class="card-img">
-                    <img src="photos/thaithaisushis.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/thaithaisushis.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3>Thaï Thaï Sushis</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3>Thaï Thaï Sushis</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
                 <div class="card-img">
-                    <img src="photos/boulangerie.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/boulangerie.jpg" alt="Un restaurant" /></a>
                 </div>
-                <div class="card-description">
+
+                <div id="frais" class="card-description">
                     <h3>Boulangerie Cyprien </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                <div class="card-description">
+                    <a href="article.html"><h3>Boulangerie Cyprien </h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
         </div>
-        <h2 id="frais" class="categorie">Les restaurants FRAIS</h2>
+        <h2  class="categorie">Les restaurants <span class="bold">Frais</span></h2>
         <div class="card-container opacity-color">
             <div class="card restaurant-card">
                 <div class="card-img">
-                    <img src="photos/chimere.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/chimere.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3>Les Chimères</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3>Les Chimères</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
-                
                 <div class="card-img">
-                    <img src="photos/petite-menagerie.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/petite-menagerie.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3> La Petite Ménagerie  </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3> La Petite Ménagerie </h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
             <div class="card restaurant-card">
-             
+
                 <div class="card-img">
-                    <img src="photos/saladebar.jpg"
-                        alt="Un restaurant" />
+                    <a href="article.html"><img src="photos/saladebar.jpg" alt="Un restaurant" /></a>
                 </div>
                 <div class="card-description">
-                    <h3> Salade Bar </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolorem mollitia velit sit magni ducimus,
-                        unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ?
-                        Ad a adipisci eveniet sed deleniti saepe.</p>
+                    <a href="article.html"><h3> Salade Bar </h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia velit sit magni ducimus, unde saepe ipsum iste tenetur neque laboriosam aliquam omnis ? Ad a adipisci eveniet sed deleniti saepe.</p>
                 </div>
             </div>
         </div>
-     
+
     </section>
     <footer>
         <section class="menu-footer">
             <h1>Menu</h1>
-            <!--Ajouter les liens des boutons-->
-            <a class="tous" href="lien vers tous">Tous les restaurants</a>
-            <a href="lien vers fat">Manger FAT</a>
-            <a href="lien vers frat">Manger FRAT</a>
-            <a href="lien vers frais">Manger FRAIS</a>
+            <a class="tous" href="restaurants.html">Tous les restaurants</a>
+            <a href="restaurants.html#fat">Manger FAT</a>
+            <a href="restaurants.html#frat">Manger FRAT</a>
+            <a href="restaurants.html#frais">Manger FRAIS</a>
         </section>
-        <section class ="contact">
+        <section class ="contact-footer">
             <h1>Contact</h1>
             <p><span class = catg>E-mail</span><br>contact@labonnebouffe.fr</p>
             <p><span class = catg>Adresse</span><br>18 place Rouguet, 31300 Toulouse</p>
@@ -182,13 +155,15 @@
         <section class="reseaux">
             <h1>Retrouvez-nous sur les réseaux sociaux</h1>
             <div class="img-footer">
-                <img src="photos/facebook.png" alt="Facebook" class="reseaux-logo" height="30" width="auto">
-                <img src="photos/instagram.png" alt="Instagram" class="reseaux-logo" height="30" width="auto">
-                <img src="photos/pinterest.png" alt="Pinterest" class="reseaux-logo" height="30" width="auto">
+                <a href="https://fr-fr.facebook.com/"><img src="photos/facebook.png" alt="Facebook" class="reseaux-logo" height="30" width="auto"></a>
+                <a href="https://www.instagram.com/?hl=fr"><img src="photos/instagram.png" alt="Instagram" class="reseaux-logo" height="30" width="auto"></a>
+                <a href="https://www.pinterest.fr/"><img src="photos/pinterest.png" alt="Pinterest" class="reseaux-logo" height="30" width="auto"></a>
             </div>
-
-            <!-- © 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés -->
+        </section>
+        <section class="copyrights">
+            <p>© 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés</p>
         </section>
     </footer>
 </body>
+
 </html>

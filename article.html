@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,40 +12,39 @@
     </link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/favicon_hotDog/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/photos/favicon_hotDog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/photos/favicon_hotDog/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 
 <body>
     <header class="header">
-        <div class="container">
-          <div class="logo-container"></div>
-          <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
-        
-          <nav class="nav">
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
+        </div>
+
+        <nav class="nav">
             <ul>
                 <li><a href="restaurants.html">Restaurants</a></li>
                 <li><a href="restaurants.html#fat">Manger Fat</a></li>
+                <li><a href="restaurants.html#frat">Manger Frat</a></li>
                 <li><a href="restaurants.html#frais">Manger Frais</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
-        </div>
+        </nav>
     </header>
- <div class="big-logo">
-    <img src="photos/image-header-v2.jpg">
- </div>
+    <div class="big-logo">
+        <img src="photos/image-header-v2.jpg">
+    </div>
     <section class="main-page">
         <div id="title-art">
-            <h1>Nom du restau</h1>
+            <h1>🍽 Nom du restaurant</h1>
         </div>
         <div class="dishes">
-            <img class="img-restau-art" target="_blank" src="photos/burgerco.jpg" alt="photo d'un restaurant" />
-
-
+            <img class="img-restau-art" target="_blank" src="photos/chimere.jpg" alt="photo d'un restaurant" />
             <div class="dish">
                 <img class="img-dish" src="photos/burgerco.jpg" alt="dish picture">
                 <img class="img-dish" src="photos/burgerco.jpg" alt="dish picture">
@@ -56,43 +56,83 @@
             illi non persequantur argutiis): partim fugiendas esse nimias amicitias, ne necesse sit unum sollicitum esse pro pluribus; satis superque esse sibi suarum cuique rerum, alienis nimis implicari molestum esse; commodissimum esse quam laxissimas
             habenas habere amicitiae, quas vel adducas, cum velis, vel remittas; caput enim esse ad beate vivendum securitatem, qua frui non possit animus, si tamquam parturiat unus pro pluribus.
         </p>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11557.712050700857!2d1.4315156!3d43.5976291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x825da162405925d8!2sLes%20Chim%C3%A8res!5e0!3m2!1sfr!2sfr!4v1633626340860!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
     </section>
     <!-- V Bouton et avis V -->
     <div id="button-art">
         <a href="tel: 06-08-08-08-08" id="contact"><strong>Ça te fais baver? <br> 
-            ! CLICK ICI !</strong></a>
+            ➡️ CLICK ICI ⬅️</strong></a>
 
     </div>
-    <div id="avis">
-        <p>faire les avis</p>
-    </div>
-    
-        <footer>
-            <section class="menu-footer">
-                <h1>Menu</h1>
-                <!--Ajouter les liens des boutons-->
-                <a class="tous" href="lien vers tous">Tous les restaurants</a>
-                <a href="lien vers fat">Manger FAT</a>
-                <a href="lien vers frat">Manger FRAT</a>
-                <a href="lien vers frais">Manger FRAIS</a>
-            </section>
-            <section class ="contact">
-                <h1>Contact</h1>
-                <p><span class = catg>E-mail</span><br>contact@labonnebouffe.fr</p>
-                <p><span class = catg>Adresse</span><br>18 place Rouguet, 31300 Toulouse</p>
-            </section>
-            <section class="reseaux">
-                <h1>Retrouvez-nous sur les réseaux sociaux</h1>
-                <div class="img-footer">
-                    <img src="photos/facebook.png" alt="Facebook" class="reseaux-logo" height="30" width="auto">
-                    <img src="photos/instagram.png" alt="Instagram" class="reseaux-logo" height="30" width="auto">
-                    <img src="photos/pinterest.png" alt="Pinterest" class="reseaux-logo" height="30" width="auto">
-                </div>
-    
-                <!-- © 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés -->
-            </section>
-        </footer>
-    
+
+    <section id="like-card">
+        <div id="like-card-buttons">
+            <input type="button" id="likeButton" value="J’aime !">
+            <div id=dislikeButtonDiv></div>
+        </div>
+        <div id="likeCount">
+            
+            <p><div id="count"></div> personnes ont aimé me croquer !</p>
+            <img id="imgLike" src="/photos/favicon.ico" alt="image d’un coeur"/>
+        </div>
+    </section>
+    <section class="avis">
+        <h2>Avis de la comunauté</h2>
+        <fieldset>
+            <!-- <legend>Avis gourmands</legend> -->
+            <form id=form method="post" action="traitement.php">
+                <p>
+                    <label for="pseudo">Votre Pseudo : </label>
+                    <input type="text" name="pseudo" placeholder="Ton pseudo" size="30" maxlength="25" 
+                    id="submitPseudo"
+                    value=""
+                    autofocus/>
+                </p>
+                <p>
+                    <label for="suggest">Que souhaitez-vous nous communiquer ?</label><br/>
+                    </label name="suggest" id="ameliorer">
+                    <textarea cols="80" rows="10" placeholder="Indiquez nous vos suggestions 😃"
+                    id="submitCom"
+                    value=""></textarea>
+                </p>
+                <input 
+                type="submit" 
+                name="send" 
+                value="Envoyer!">
+            </form>
+        </fieldset>
+        <h2>Avis des internautes :</h2>
+        <ul id="usersCom">
+            <!-- <li></li> -->
+        </ul>
+    </section>
+
+    <footer>
+        <section class="menu-footer">
+            <h1>Menu</h1>
+            <a class="tous" href="restaurants.html">Tous les restaurants</a>
+            <a href="restaurants.html#fat">Manger FAT</a>
+            <a href="restaurants.html#frat">Manger FRAT</a>
+            <a href="restaurants.html#frais">Manger FRAIS</a>
+        </section>
+        <section class ="contact-footer">
+            <h1>Contact</h1>
+            <p><span class=c atg>E-mail</span><br>contact@labonnebouffe.fr</p>
+            <p><span class=c atg>Adresse</span><br>18 place Rouguet, 31300 Toulouse</p>
+        </section>
+        <section class="reseaux">
+            <h1>Retrouvez-nous sur les réseaux sociaux</h1>
+            <div class="img-footer">
+                <a href="https://fr-fr.facebook.com/"><img src="photos/facebook.png" alt="Facebook" class="reseaux-logo" height="30" width="auto"></a>
+                <a href="https://www.instagram.com/?hl=fr"><img src="photos/instagram.png" alt="Instagram" class="reseaux-logo" height="30" width="auto"></a>
+                <a href="https://www.pinterest.fr/"><img src="photos/pinterest.png" alt="Pinterest" class="reseaux-logo" height="30" width="auto"></a>
+            </div>
+        </section>
+        <section class="copyrights">
+            <p>© 2021 La Bonne Bouffe Saint-Cyprien SAS. Tous droits réservés</p>
+        </section>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
