@@ -6,9 +6,11 @@ body {
 p {
     font-size: 0.8em;
 }
+
 h3:hover {
     transform: scale(1.1);
 }
+
 
 /*code css header*/
 
@@ -184,12 +186,15 @@ h3:hover {
 .cards-discover h2 {
     margin-bottom: 1em;
 }
+
 .cards-discover .card-name:hover {
     transform: scale(1.1);
 }
+
 .card-coup-de-coeur .card-name:hover {
     transform: scale(1.1);
 }
+
 .card-discover1 {
     display: flex;
     justify-content: space-around;
@@ -420,11 +425,12 @@ h3:hover {
 }
 
 @media screen and (max-width: 500px) {
-    .card-button button a{
-    padding: 15px;
-    font-size: 15px;
+    .card-button button a {
+        padding: 15px;
+        font-size: 15px;
     }
 }
+
 
 /* responsive section st cyprien */
 
@@ -719,7 +725,7 @@ footer {
 #title-art {
     margin: 20px;
     margin-block: 4em;
-} 
+}
 
 #title-art h1 {
     text-align: center;
@@ -775,7 +781,7 @@ footer {
 #button-art a {
     font-size: 0.9em;
     padding-top: 10px;
-    /* width: 60%; */
+    width: 40%;
     border-radius: 1rem;
     justify-content: center;
     text-align: center;
@@ -796,9 +802,19 @@ footer {
     transform: scale(1.2);
 }
 
+#button-art h3 {
+    margin-bottom: 1rem;
+}
+
+#button-art h3:hover {
+    transform: none;
+}
+
 #localisation {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    padding-inline: 10px;
 }
 
 #adress ul {
@@ -826,14 +842,9 @@ footer {
     color: black;
 }
 
-#googleMaps {
-    border: 1px solid black;
-}
-
 #like-card {
     display: flex;
     flex-direction: row;
-    
 }
 
 #likeCount {
@@ -920,6 +931,7 @@ fieldset {
     }
 }
 
+
 /* Fin section avis de la communauté (article) */
 
 
@@ -988,7 +1000,7 @@ fieldset {
 
 /* Fin de section Bouton "j'aime" */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 800px) {
     .main-page {
         width: 80%;
         margin: 0 auto;
@@ -1008,16 +1020,21 @@ fieldset {
     .dish {
         justify-content: space-between;
     }
-    #button-art {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
     .main-page p {
         margin-top: 20px;
     }
     #button-art a {
         width: 30%;
         height: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #localisation {
+        flex-direction: row;
+    }
+    #googleMaps {
+        width: 400px;
     }
 }
 
@@ -1139,36 +1156,44 @@ fieldset {
 
 
 /* Info-bulle */
+
 .tooltip {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 18em;
     background-color: white;
-    color:#cf2b4e;
+    color: #cf2b4e;
     text-align: center;
     padding: 1em;
     border: solid 1px #cf2b4e;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
-  }
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
 @media screen and (max-width: 600px) {
     .tooltip:hover .tooltiptext {
         visibility: hidden;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 7em;
     }
 }
+
+
 /* Fin info-bulle */
