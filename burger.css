@@ -26,14 +26,14 @@ display: none;
         margin-left: 13px;
     }
     .menu-list {
-        display: none;
+        display: none !important;
         flex-direction: column;
         width: 0;
         transition: all .5s ease-in-out;
         list-style: none;
     }
     .show {
-        display: flex;
+        display: flex !important;
         text-align: right;
         margin-top: 45px;
         width: 50px;
