@@ -91,6 +91,50 @@ h3:hover {
 
 /* fin code css header*/
 
+@media screen and (max-width: 600px) {
+    #toggle-burger {
+        display: block;
+        }
+    #burger-icon {
+        display: block;
+        width: 30%;
+        padding: 10px;
+        margin-left: 13px;
+    }
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        width: 0;
+        transition: all .5s ease-in-out;
+        list-style: none;
+    }
+    .show {
+        display: flex;
+        text-align: right;
+        margin-top: 45px;
+        width: 50px;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        margin: 15px;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    .menu-list li {
+        width: 125px;
+        padding: 2px;
+        background-color: #cf2b4e;
+        border-radius: 5x;
+    }
+}
+
+/* fin media header */
+
 #page-web {
     width: 80%;
     margin: 0 auto;

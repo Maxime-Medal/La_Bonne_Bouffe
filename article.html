@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>Les chimères- LA BONNE BOUFFE -</title>
-    <link rel="stylesheet" href="style.css">
-    </link>
+    <title>Article - LA BONNE BOUFFE -</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="burger.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,19 +21,21 @@
 <body>
     <header class="header">
         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
-        </div>
-
+        <a href="index.html"><img class="logo" src="photos/logo.jpg" alt="logo"></a>
+      </div>
         <nav class="nav">
-            <ul>
-                <li><a href="restaurants.html">Restaurants</a></li>
-                <li><a href="restaurants.html#fat">Manger Fat</a></li>
-                <li><a href="restaurants.html#frat">Manger Frat</a></li>
-                <li><a href="restaurants.html#frais">Manger Frais</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul class="menu-list">
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="restaurants.html#fat">Manger Fat</a></li>
+              <li><a href="restaurants.html#frat">Manger Frat</a></li>
+              <li><a href="restaurants.html#frais">Manger Frais</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+        <div id="toggle-burger">
+          <img id="burger-icon" src="/photos/menu_64.png" alt="burger icon" >
+        </div>
+  </header>
     <div class="big-logo">
         <img src="photos/image-header-v2.jpg">
     </div>
@@ -157,6 +157,7 @@
 
         </section>
     </footer>
+    <script defer type="text/javascript" src="script.js"></script>
     <script src="index.js"></script>
 </body>
 
