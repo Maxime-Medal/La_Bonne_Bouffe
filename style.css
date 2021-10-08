@@ -93,7 +93,7 @@ h3:hover {
 
 /* fin code css header*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     #toggle-burger {
         display: block;
         }
