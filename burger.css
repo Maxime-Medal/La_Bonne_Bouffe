@@ -5,9 +5,6 @@
     width: 100%;
 }
 
-
-
-
 #toggle-burger {
 display: none;
 }
@@ -56,3 +53,4 @@ display: none;
         width: 125px;
         padding: 2px;
     }
+}

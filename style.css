@@ -299,6 +299,7 @@ h3:hover {
 
 .card-description h3 {
     text-align: center;
+    color: #000000;
 }
 
 .card-description {
@@ -918,6 +919,26 @@ fieldset {
 
 #count {
     margin: 0em 1em 0em 1em;
+}
+
+
+@media screen and (max-width: 1025px) {
+    #like-card{
+        display: block;
+        text-align: center;
+        margin-top: 5em;
+        height: inherit;
+    }
+
+    #likeCount {
+        display: block;
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    #img-like {
+        margin-top: 1em;
+    }
 }
 
 
