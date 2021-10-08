@@ -13,8 +13,4 @@ toggleMenu();
 
 
 
-const frat = document.querySelector('.bold');
 
-frat.addEventListener(, () => {
-    alert("Frat = Mi-frais, mi-fat");
-})
