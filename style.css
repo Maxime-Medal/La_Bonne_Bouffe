@@ -96,7 +96,7 @@ h3:hover {
 @media screen and (max-width: 600px) {
     #toggle-burger {
         display: block;
-        }
+    }
     #burger-icon {
         display: block;
         width: 30%;
@@ -134,6 +134,7 @@ h3:hover {
         border-radius: 5x;
     }
 }
+
 
 /* fin media header */
 
@@ -247,6 +248,7 @@ h3:hover {
     text-align: justify;
     padding: 1.5em;
 }
+
 
 /* effet de survol sur image*/
 
@@ -895,9 +897,7 @@ fieldset {
     margin: 0.2em;
     background-color: rgba(207, 43, 78, 0.9);
     padding: 0.5em;
-    border: solid 1px black;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px black;
     text-align: left;
     max-width: 50em;
 }
@@ -991,21 +991,18 @@ fieldset {
     margin: 0em 1em 0em 1em;
 }
 
-
 @media screen and (max-width: 1025px) {
-    #like-card{
+    #like-card {
         display: block;
         text-align: center;
         margin-top: 5em;
         height: inherit;
     }
-
     #likeCount {
         display: block;
         text-align: center;
         margin-top: 2em;
     }
-    
     #img-like {
         margin-top: 1em;
     }
