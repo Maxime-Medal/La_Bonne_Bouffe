@@ -364,6 +364,12 @@ li:hover {
     text-align: justify;
 }
 
+@media screen and (max-width: 500px) {
+    .card-button button a{
+    padding: 15px;
+    font-size: 15px;
+    }
+}
 
 /* responsive section st cyprien */
 
@@ -661,7 +667,7 @@ footer {
     border-radius: 3px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
     margin-block: 4em;
-}
+} 
 
 #title-art h1 {
     text-align: center;
@@ -740,6 +746,7 @@ footer {
 #like-card {
     display: flex;
     flex-direction: row;
+    
 }
 
 #likeCount {
@@ -758,6 +765,9 @@ footer {
 fieldset {
     background-color: rgba(207, 43, 78, 0.9);
     border-radius: 10px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 1.3em;
 }
 #usersCom {
     display: flex;
@@ -793,6 +803,30 @@ fieldset {
     border-radius: 10px;
     padding: 0.5em;
 }
+
+#submitCom {
+    width: 99%;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+}
+
+.avis h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .avis {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .avis {
+        max-width: 300px;
+    }
+}
+
 /* Fin section avis de la communauté (article) */
 
 /* Section Bouton "j'aime" */
@@ -800,8 +834,9 @@ fieldset {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
+    height: 5em;
     margin-bottom: 1em;
+    margin-top: 50px;
 }
 #likeButton {
     background-color: white;
@@ -821,6 +856,7 @@ fieldset {
     display:flex;
     justify-content: space-around;
     vertical-align: middle;
+    align-items: center;
 }
 #like-card p {
     margin: 0em 1em 0em 1em;
