@@ -32,24 +32,24 @@ h3:hover {
 }
 
 .logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-ul {
+.nav ul {
     list-style: none;
     display: flex;
     padding-right: 25px;
     color: #FFDA2A;
 }
 
-li {
+.nav li {
     padding-left: 30px;
     justify-content: space-around;
     transition: transform .2s;
     font-weight: 500;
 }
 
-li:hover {
+.nav li:hover {
     transform: scale(1.1);
 }
 
@@ -343,6 +343,7 @@ li:hover {
 
 .card-description h3 {
     text-align: center;
+    color: #000000;
 }
 
 .card-description {
@@ -418,6 +419,12 @@ li:hover {
     text-align: justify;
 }
 
+@media screen and (max-width: 500px) {
+    .card-button button a{
+    padding: 15px;
+    font-size: 15px;
+    }
+}
 
 /* responsive section st cyprien */
 
@@ -710,28 +717,24 @@ footer {
 /* start Article Page  */
 
 #title-art {
-    background-color: #CF2B4E;
     margin: 20px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
     margin-block: 4em;
-}
+} 
 
 #title-art h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
     text-transform: uppercase;
     padding: 25px;
     margin: 20px;
     border-radius: 25px;
-    text-shadow: 1px 1px 3px #67C2CB;
     font-weight: bolder;
 }
 
 .img-restau-art {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(0 0 0);
 }
 
 .dishes {
@@ -744,7 +747,6 @@ footer {
     width: 70%;
     margin-top: 1em;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(0 0 0);
 }
 
 .dish {
@@ -758,42 +760,80 @@ footer {
     margin: 10px;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(103, 194, 203, 0.2);
     font-size: 1rem;
 }
 
 #button-art {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 10px; */
     padding-block: 15px;
 }
 
 #button-art a {
     font-size: 0.9em;
-    padding: 10px;
-    width: 60%;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 5px;
+    padding-top: 10px;
+    /* width: 60%; */
+    border-radius: 1rem;
     justify-content: center;
     text-align: center;
+    ;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: black;
-    background-color: #CF2B4E;
+    color: #CF2B4E;
+    border: 1px solid #CF2B4E;
+    background-color: white;
     transition: transform .2s;
 }
 
 #button-art a:hover {
     text-decoration: underline;
+    background-color: #CF2B4E;
+    color: white;
     transform: scale(1.2);
+}
+
+#localisation {
+    display: flex;
+    justify-content: space-around;
+}
+
+#adress ul {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    list-style: none;
+}
+
+#adress li {
+    padding-block: 4px;
+}
+
+#adress a {
+    text-decoration: none;
+    color: black;
+}
+
+#adress a:hover {
+    text-decoration: underline;
+}
+
+#adresse a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#googleMaps {
+    border: 1px solid black;
 }
 
 #like-card {
     display: flex;
     flex-direction: row;
+    
 }
 
 #likeCount {
@@ -803,22 +843,29 @@ footer {
 
 
 /* Section avis de la communauté (article) */
+
 .avis {
     display: block;
     text-align: center;
     max-width: 600px;
     margin: auto;
 }
+
 fieldset {
     background-color: rgba(207, 43, 78, 0.9);
     border-radius: 10px;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 1.3em;
 }
+
 #usersCom {
     display: flex;
     flex-direction: column-reverse;
     list-style: none;
     color: black;
 }
+
 .card-avis {
     margin: 0.2em;
     background-color: rgba(207, 43, 78, 0.9);
@@ -829,17 +876,19 @@ fieldset {
     text-align: left;
     max-width: 50em;
 }
+
 .pseudo {
     color: white;
     font-weight: 700;
     margin: 0.5em 1em 0em 1em;
 }
+
 .date-of-com {
     font-style: italic;
     color: rgb(194, 194, 194);
     margin: 0em 1em 0em 4em;
-    
 }
+
 .text-avis {
     background-color: whitesmoke;
     margin: 0.5em 1em 1em 0.5em;
@@ -847,16 +896,44 @@ fieldset {
     border-radius: 10px;
     padding: 0.5em;
 }
+
+#submitCom {
+    width: 99%;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+}
+
+.avis h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .avis {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .avis {
+        max-width: 300px;
+    }
+}
+
 /* Fin section avis de la communauté (article) */
 
+
 /* Section Bouton "j'aime" */
+
 #like-card {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
+    height: 5em;
     margin-bottom: 1em;
+    margin-top: 50px;
 }
+
 #likeButton {
     background-color: white;
     color: black;
@@ -864,6 +941,7 @@ fieldset {
     padding: 0.5em;
     border-radius: 10px 10px 0px 0px;
 }
+
 #dislikeButton {
     background-color: white;
     color: black;
@@ -871,17 +949,43 @@ fieldset {
     padding: 0.5em;
     border-radius: 0px 0px 10px 10px;
 }
+
 #likeCount {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     vertical-align: middle;
+    align-items: center;
 }
+
 #like-card p {
     margin: 0em 1em 0em 1em;
 }
+
 #count {
     margin: 0em 1em 0em 1em;
 }
+
+
+@media screen and (max-width: 1025px) {
+    #like-card{
+        display: block;
+        text-align: center;
+        margin-top: 5em;
+        height: inherit;
+    }
+
+    #likeCount {
+        display: block;
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    #img-like {
+        margin-top: 1em;
+    }
+}
+
+
 /* Fin de section Bouton "j'aime" */
 
 @media screen and (min-width: 480px) {
@@ -990,6 +1094,7 @@ fieldset {
     font-weight: bold;
     color: white;
     border: none;
+    border-radius: 30px;
 }
 
 .contact textarea {
@@ -999,6 +1104,9 @@ fieldset {
     width: 100%;
     height: 10rem;
     border: solid 2px #67C2CB;
+    border-radius: 30px;
+    font: inherit;
+    padding: 10px
 }
 
 .contact textarea:focus-visible {
